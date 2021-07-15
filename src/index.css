@@ -1,3 +1,21 @@
+/* Define colors */
+:root {
+  --gray-300: #e0e0e0;
+  --gray-500: #9e9e9e;
+  --gray-800: #424242;
+
+  --primary-dark: #00508c;
+  --primary-color: #0b7cbd;
+  --primary-light: #5aabf0;
+
+  --secondary-dark: #c4aa00;
+  --secondary-color: #fcdb06;
+  --secondary-light: #ffff55;
+
+  --primary-text: #ffffff;
+  --secondary-text: #212121;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,5 +28,5 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 16px;
+  font-size: 12px;
 }
