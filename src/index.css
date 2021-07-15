@@ -14,6 +14,8 @@
 
   --primary-text: #ffffff;
   --secondary-text: #212121;
+
+  --minHeight: 80vh;
 }
 
 * {

@@ -34,7 +34,7 @@ const useStyles = makeStyles({
   },
 });
 
-function Navbar() {
+function Navbar(props) {
   const classes = useStyles();
 
   return (

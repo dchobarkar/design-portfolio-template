@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/styles";
 import { Heart } from "react-feather";
 
+// CSS
 const useStyles = makeStyles({
   footer: {
     textAlign: "center",
@@ -9,13 +10,15 @@ const useStyles = makeStyles({
     padding: "20px",
 
     "& svg": {
+      position: "relative",
+      top: "3px",
       color: "red",
       fill: "red",
     },
   },
 });
 
-function Footer() {
+function Footer(props) {
   const classes = useStyles();
 
   return (
