@@ -2,12 +2,12 @@ import React from "react";
 import { makeStyles } from "@material-ui/styles";
 import { Heart } from "react-feather";
 
-// CSS
 const useStyles = makeStyles({
-  footer: {
+  root: {
     textAlign: "center",
-    backgroundColor: "#D6E9FE",
-    padding: "20px",
+    color: "var(--primary-text)",
+    backgroundColor: "var(--primary-300)",
+    padding: "1rem",
 
     "& svg": {
       position: "relative",
@@ -22,8 +22,8 @@ function Footer(props) {
   const classes = useStyles();
 
   return (
-    <footer className={classes.footer}>
-      Made with <Heart size={14} /> by Darshan Chobarkar &copy; Copyright 2021
+    <footer className={classes.root}>
+      Made with <Heart size={16} /> by Darshan Chobarkar &copy; Copyright 2021
     </footer>
   );
 }
