@@ -2,7 +2,7 @@ import { PacmanLoader } from "react-spinners";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
-  spinnerBlock: {
+  root: {
     minHeight: "var(--minHeight)",
     width: "100%",
     display: "flex",
@@ -15,8 +15,8 @@ function Spinner(props) {
   const classes = useStyles();
 
   return (
-    <div className={classes.spinnerBlock}>
-      <PacmanLoader color={"var(--primary-light)"} loading={true} size={25} />
+    <div className={classes.root}>
+      <PacmanLoader color={"var(--secondary)"} loading={true} size={25} />
     </div>
   );
 }
