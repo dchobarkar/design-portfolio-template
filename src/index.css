@@ -1,20 +1,27 @@
-/* Define colors */
 :root {
-  --gray-300: #e0e0e0;
-  --gray-500: #9e9e9e;
-  --gray-800: #424242;
+  /* Gray color palette */
+  --gray-100: #eeeeee;
+  --gray-300: #dddddd;
+  --gray: #cccccc;
+  --gray-700: #bbbbbb;
+  --gray-900: #333333;
 
-  --primary-dark: #00508c;
-  --primary-color: #0b7cbd;
-  --primary-light: #5aabf0;
+  /* Primary color palette */
+  --primary-300: #ecfdf9;
+  --primary: #4abdac;
+  --primary-700: #00aa92;
+  --primary-text: #dfdce3;
 
-  --secondary-dark: #c4aa00;
-  --secondary-color: #fcdb06;
-  --secondary-light: #ffff55;
-
-  --primary-text: #ffffff;
+  /* Secondary color palette */
+  --secondary-300: #ff6c5f;
+  --secondary: #fc4a1a;
+  --secondary-700: #a20000;
   --secondary-text: #212121;
 
+  /* Button color palette */
+  --button: #f7b733;
+
+  /* Height variables */
   --minHeight: 80vh;
 }
 
@@ -30,5 +37,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 12px;
+
+  font-size: 16px;
 }
