@@ -13,10 +13,12 @@ const useStyles = makeStyles({
     "& h1": {
       width: "100%",
       textAlign: "center",
+      fontSize: "2rem",
     },
     "& p": {
       width: "100%",
       textAlign: "center",
+      fontSize: "1rem",
     },
   },
 });
@@ -25,12 +27,12 @@ function Intro(props) {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
+    <section className={classes.root}>
       <h1>
         I help business launch and grow <br />
         their online presence.
       </h1>
-    </div>
+    </section>
   );
 }
 
