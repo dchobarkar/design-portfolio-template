@@ -73,7 +73,7 @@ function Contact(props) {
   const classes = useStyles();
 
   return (
-    <section className={classes.root}>
+    <section id="contact" className={classes.root}>
       <p className={classes.header}>Schedule a complimentary 30-minute chat</p>
       <p className={classes.subHeader}>
         Just answer these questions first and I'll send you a link to my

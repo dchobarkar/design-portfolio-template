@@ -2,14 +2,14 @@ import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
 const useStyles = makeStyles({
-  navbar: {
-    fontSize: "1.3rem",
+  root: {
     width: "100%",
     padding: "1.5rem",
-    color: "var(--primary-text)",
-    background: "var(--primary-color)",
     display: "flex",
     justifyContent: "space-between",
+    fontSize: "1.3rem",
+    color: "var(--primary-text)",
+    backgroundColor: "var(--primary-700)",
 
     "& a:link,a:visited": {
       color: "var(--primary-text)",
@@ -23,9 +23,9 @@ const useStyles = makeStyles({
 
   menu: {
     "& li": {
+      marginRight: "1.5rem",
       display: "inline",
       position: "relative",
-      marginRight: "1.5rem",
       top: "0.7rem",
     },
     "& li:last-of-type": {
@@ -38,21 +38,28 @@ function Navbar(props) {
   const classes = useStyles();
 
   return (
-    <div className={classes.navbar}>
+    <div className={classes.root}>
       <div className={classes.brand}>
         <a href="/">Barbatos</a>
       </div>
 
       <ul className={classes.menu}>
         <li>
-          <a href="#projects">Projects</a>
+          <a href="#portfolio">Porfolio</a>
         </li>
+
+        <li>
+          <a href="#services">Services</a>
+        </li>
+
         <li>
           <a href="#tips">Tips</a>
         </li>
+
         <li>
           <a href="#about">About</a>
         </li>
+
         <li>
           <a href="#contact">Contact</a>
         </li>
