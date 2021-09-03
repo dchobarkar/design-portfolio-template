@@ -9,8 +9,13 @@ import Footer from "./components/Footer/Footer";
 const LandingPage = React.lazy(() => {
   return import("./components/LandingPage/LandingPage");
 });
+
 const Portfolio = React.lazy(() => {
   return import("./components/Porfolio/Porfolio");
+});
+
+const Services = React.lazy(() => {
+  return import("./components/Services/Services");
 });
 
 function App(props) {
@@ -30,6 +35,12 @@ function App(props) {
             path="/portfolio"
             exact
             render={(props) => <Portfolio {...props} />}
+          />
+
+          <Route
+            path="/services"
+            exact
+            render={(props) => <Services {...props} />}
           />
         </Switch>
       </Suspense>
