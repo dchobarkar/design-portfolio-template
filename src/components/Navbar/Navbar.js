@@ -1,5 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
+import { withRouter } from "react-router";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   root: {
@@ -40,24 +42,24 @@ function Navbar(props) {
   return (
     <div className={classes.root}>
       <div className={classes.brand}>
-        <a href="/">Barbatos</a>
+        <Link to="/">Barbatos</Link>
       </div>
 
       <ul className={classes.menu}>
         <li>
-          <a href="#portfolio">Porfolio</a>
+          <Link to="/portfolio">Porfolio</Link>
         </li>
 
         <li>
-          <a href="#services">Services</a>
+          <Link to="/services">Services</Link>
         </li>
 
         <li>
-          <a href="#tips">Tips</a>
+          <Link to="/tips">Tips</Link>
         </li>
 
         <li>
-          <a href="#about">About</a>
+          <Link to="/about">About</Link>
         </li>
 
         <li>
@@ -68,4 +70,4 @@ function Navbar(props) {
   );
 }
 
-export default Navbar;
+export default withRouter(Navbar);
