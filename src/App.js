@@ -18,6 +18,10 @@ const Services = React.lazy(() => {
   return import("./components/Services/Services");
 });
 
+const Resources = React.lazy(() => {
+  return import("./components/Resources/Resources");
+});
+
 function App(props) {
   return (
     <BrowserRouter>
@@ -41,6 +45,12 @@ function App(props) {
             path="/services"
             exact
             render={(props) => <Services {...props} />}
+          />
+
+          <Route
+            path="/resources"
+            exact
+            render={(props) => <Resources {...props} />}
           />
         </Switch>
       </Suspense>

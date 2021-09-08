@@ -55,7 +55,7 @@ function Navbar(props) {
         </li>
 
         <li>
-          <Link to="/tips">Tips</Link>
+          <Link to="/resources">Resources</Link>
         </li>
 
         <li>
