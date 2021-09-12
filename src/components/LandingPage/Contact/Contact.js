@@ -64,7 +64,7 @@ const useStyles = makeStyles({
       border: "none",
       borderRadius: "3px",
       color: "var(--primary-text)",
-      backgroundColor: "var(--button)",
+      backgroundColor: "var(--accent)",
     },
   },
 });

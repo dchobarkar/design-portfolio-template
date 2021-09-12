@@ -42,7 +42,7 @@ const useStyles = makeStyles({
   button: {
     padding: "0.5rem",
     color: "var(--primary-text)",
-    backgroundColor: "var(--button)",
+    backgroundColor: "var(--accent)",
     border: "none",
     float: "right",
   },

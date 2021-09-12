@@ -7,19 +7,19 @@
   --gray-900: #333333;
 
   /* Primary color palette */
-  --primary-300: #ecfdf9;
-  --primary: #4abdac;
-  --primary-700: #00aa92;
-  --primary-text: #dfdce3;
+  --primary-300: #c576f6;
+  --primary: #a020f0;
+  --primary-700: #6c0ba9;
+  --primary-text: #f8f8f8;
 
   /* Secondary color palette */
-  --secondary-300: #ff6c5f;
-  --secondary: #fc4a1a;
-  --secondary-700: #a20000;
-  --secondary-text: #212121;
+  --secondary-300: #f26561;
+  --secondary: #ff210c;
+  --secondary-700: #df000c;
+  --secondary-text: #080808;
 
-  /* Button color palette */
-  --button: #f7b733;
+  /* Accent color */
+  --accent: #ff00ff;
 
   /* Height variables */
   --minHeight: 80vh;
