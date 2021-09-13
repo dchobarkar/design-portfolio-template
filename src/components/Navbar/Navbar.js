@@ -1,71 +1,160 @@
 import React from "react";
-import { makeStyles } from "@material-ui/styles";
 import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
+import clsx from "clsx";
+import { makeStyles } from "@material-ui/styles";
 
-const useStyles = makeStyles({
+import { ReactComponent as CloseIcon } from "../../Assets/navbar/Close.svg";
+import { ReactComponent as MenuIcon } from "../../Assets/navbar/Menu.svg";
+
+import NavLink from "./NavLink/NavLink";
+
+// CSS
+const useStyle = makeStyles({
   root: {
-    width: "100%",
-    padding: "1.5rem",
+    height: "80px",
+    padding: "0px 20px",
     display: "flex",
     justifyContent: "space-between",
+    alignItems: "center",
+    position: "relative",
+    zIndex: "1",
+    fontFamily: "Dosis",
     fontSize: "1.3rem",
     color: "var(--primary-text)",
-    backgroundColor: "var(--primary-700)",
+    background: "linear-gradient(#6616fc, #f394d3)",
+    boxShadow: "0 10px 6px -6px #777",
 
     "& a:link,a:visited": {
       color: "var(--primary-text)",
+      transition: "all 0.5s ease",
       textDecoration: "none",
+    },
+
+    "& a:hover": {
+      color: "var(--gray-700)",
+      transition: "all 0.5s ease",
     },
   },
 
   brand: {
-    fontSize: "2rem",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    fontSize: "1.5rem",
   },
 
   menu: {
-    "& li": {
-      marginRight: "1.5rem",
-      display: "inline",
-      position: "relative",
-      top: "0.7rem",
+    width: "100%",
+    height: "var(--minHeight)",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    position: "absolute",
+    top: "80px",
+    left: "-100%",
+    opacity: "0",
+    transition: "all 0.5s ease",
+    listStyleType: "none",
+  },
+  open: {
+    zIndex: "1",
+    left: "0",
+    opacity: "1",
+    transition: "all 0.5s ease",
+    background: "#9899d1",
+  },
+
+  navbarIcon: { display: "block" },
+
+  icon: {
+    width: "45px",
+    height: "45px",
+  },
+
+  /* Tablet view */
+  "@media only screen and (min-width: 401px) and (max-width: 960px)": {
+    root: {
+      padding: "0px 40px",
     },
-    "& li:last-of-type": {
-      marginRight: "0",
+
+    brand: {
+      fontSize: "1.7rem",
+    },
+
+    menu: {
+      flexDirection: "row",
+      justifyContent: "flex-end",
+      position: "static",
+      opacity: "1",
+    },
+
+    navbarIcon: {
+      display: "none",
+    },
+  },
+
+  /* Desktop view */
+  "@media only screen and (min-width: 961px)": {
+    root: {
+      padding: "0px 40px",
+    },
+
+    brand: {
+      fontSize: "1.7rem",
+    },
+
+    menu: {
+      flexDirection: "row",
+      justifyContent: "flex-end",
+      position: "static",
+      opacity: "1",
+    },
+
+    navbarIcon: {
+      display: "none",
     },
   },
 });
 
 function Navbar(props) {
-  const classes = useStyles();
+  const classes = useStyle();
+
+  // Flag to handle navbar state (Mobile view only)
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  const toggleNavbar = () => setIsOpen(!isOpen);
+
+  const closeMobileMenu = () => setIsOpen(false);
 
   return (
     <div className={classes.root}>
       <div className={classes.brand}>
-        <Link to="/">Barbatos</Link>
+        <Link to="/" onClick={closeMobileMenu}>
+          Barbatos
+        </Link>
       </div>
 
-      <ul className={classes.menu}>
-        <li>
-          <Link to="/portfolio">Porfolio</Link>
-        </li>
+      <ul className={isOpen ? clsx(classes.menu, classes.open) : classes.menu}>
+        <NavLink to="/portfolio" label="Porfolio" onClick={closeMobileMenu} />
 
-        <li>
-          <Link to="/services">Services</Link>
-        </li>
+        <NavLink to="/services" label="Services" onClick={closeMobileMenu} />
 
-        <li>
-          <Link to="/resources">Resources</Link>
-        </li>
+        <NavLink to="/resources" label="Resources" onClick={closeMobileMenu} />
 
-        <li>
-          <Link to="/about">About</Link>
-        </li>
+        <NavLink to="/about" label="About" onClick={closeMobileMenu} />
 
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
+        <NavLink to="/#contact" label="Contact" onClick={closeMobileMenu} />
       </ul>
+
+      <div className={classes.navbarIcon} onClick={toggleNavbar}>
+        {isOpen ? (
+          <CloseIcon className={classes.icon} />
+        ) : (
+          <MenuIcon className={classes.icon} />
+        )}
+      </div>
     </div>
   );
 }
