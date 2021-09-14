@@ -1,8 +1,9 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
-import SubServices from "../LandingPage/Services/Services";
+import ServicesList from "./ServicesList/ServicesList";
 import FAQ from "./FAQ/FAQ";
+import TestimonialList from "./TestimonialList/TestimonialList";
 
 const useStyles = makeStyles({
   root: {
@@ -10,19 +11,38 @@ const useStyles = makeStyles({
     width: "100%",
     display: "flex",
     flexDirection: "column",
-    flexWrap: "wrap",
     justifyContent: "center",
     alignItems: "center",
+    fontFamily: "Lato",
+    fontWeight: "400",
+    textColor: "var(--secondary-text)",
     backgroundColor: "var(--gray-100)",
   },
-  header: {
-    padding: "2rem",
-    fontSize: "2rem",
-    fontWeight: "500",
+  serviceIntro: {
+    minHeight: "var(--minHeight)",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    fontFamily: "Dosis",
+    fontSize: "3.5rem",
+    letterSpacing: "3px",
+    textAlign: "center",
   },
-  subHeader: {
-    padding: "1rem",
-    fontSize: "1.5rem",
+
+  /* Tablet view */
+  "@media only screen and (min-width: 401px) and (max-width: 960px)": {
+    serviceIntro: {
+      minHeight: "60vh",
+      fontSize: "5rem",
+    },
+  },
+
+  /* Desktop view */
+  "@media only screen and (min-width: 961px)": {
+    serviceIntro: {
+      minHeight: "60vh",
+      fontSize: "5rem",
+    },
   },
 });
 
@@ -31,15 +51,15 @@ function Services(props) {
 
   return (
     <div className={classes.root}>
-      <p className={classes.header}>What I can do for you</p>
-      <p className={classes.subHeader}>
-        Whether you need website design, website development or both, I’m here
-        for you.
-      </p>
+      <div className={classes.serviceIntro}>
+        I build capacity for organizations with a greater purpose...
+      </div>
 
-      <SubServices />
+      <ServicesList />
 
       <FAQ />
+
+      <TestimonialList />
     </div>
   );
 }
