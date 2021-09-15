@@ -1,14 +1,18 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
-import portfolio1 from "../../Assets/img/portfolio/portfolio1.png";
+import PortfolioCard from "../../CustomComponents/PortfolioCard/PortfolioCard";
 
+// Image imports
+import ABCommunity from "../../Assets/img/portfolio/ABCommunity.png";
+
+// CSS
 const useStyles = makeStyles({
   root: {
     minHeight: "var(--minHeight)",
     width: "100%",
     display: "flex",
-    flexWrap: "wrap",
+    flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "var(--gray-100)",
@@ -16,9 +20,9 @@ const useStyles = makeStyles({
   header: {
     width: "100%",
     padding: "2rem",
-    textAlign: "center",
+    fontFamily: "Dosis",
     fontSize: "1.8rem",
-    fontWeight: "500",
+    textAlign: "center",
   },
   portfolioContainer: {
     display: "flex",
@@ -26,25 +30,41 @@ const useStyles = makeStyles({
     justifyContent: "center",
     alignItems: "center",
   },
-  portfolio: {
-    padding: "2rem",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    "& img": {
-      width: "20rem",
-    },
-  },
-  name: {
-    padding: "0.5rem",
-    fontSize: "0.8rem",
-    fontWeight: "500",
-  },
-  services: {
-    fontSize: "0.7rem",
-  },
 });
+
+// Portfolio list
+const portfolioList = [
+  {
+    name: "A B Community",
+    imageURL: ABCommunity,
+    services: "UI/UX Design, Development",
+    websiteURL: "www.abcommunity.com",
+  },
+  {
+    name: "PC Portfolio",
+    imageURL: ABCommunity,
+    services: "UI/UX Design, Development",
+    websiteURL: "www.abcommunity.com",
+  },
+  {
+    name: "Pushkaraj Portfolio",
+    imageURL: ABCommunity,
+    services: "UI/UX Design, Development",
+    websiteURL: "www.abcommunity.com",
+  },
+  {
+    name: "Mahesh Finance Services",
+    imageURL: ABCommunity,
+    services: "UI/UX Design, Development",
+    websiteURL: "www.abcommunity.com",
+  },
+  {
+    name: "ChemPro Services",
+    imageURL: ABCommunity,
+    services: "UI/UX Design, Development",
+    websiteURL: "www.abcommunity.com",
+  },
+];
 
 function Portfolio(props) {
   const classes = useStyles();
@@ -52,47 +72,13 @@ function Portfolio(props) {
   return (
     <div className={classes.root}>
       <p className={classes.header}>
-        Here's a sampling of what I've been up lately.
+        Here's a sampling of what I've been up to lately.
       </p>
 
       <div className={classes.portfolioContainer}>
-        <div className={classes.portfolio}>
-          <img alt="Ajab Babkbak Community" src={portfolio1} />
-          <p className={classes.name}>Ajab Babkbak Community</p>
-          <p className={classes.services}>UI/UX Design, Website Design</p>
-        </div>
-      </div>
-
-      <div className={classes.portfolioContainer}>
-        <div className={classes.portfolio}>
-          <img alt="Ajab Babkbak Community" src={portfolio1} />
-          <p className={classes.name}>Ajab Babkbak Community</p>
-          <p className={classes.services}>UI/UX Design, Website Design</p>
-        </div>
-      </div>
-
-      <div className={classes.portfolioContainer}>
-        <div className={classes.portfolio}>
-          <img alt="Ajab Babkbak Community" src={portfolio1} />
-          <p className={classes.name}>Ajab Babkbak Community</p>
-          <p className={classes.services}>UI/UX Design, Website Design</p>
-        </div>
-      </div>
-
-      <div className={classes.portfolioContainer}>
-        <div className={classes.portfolio}>
-          <img alt="Ajab Babkbak Community" src={portfolio1} />
-          <p className={classes.name}>Ajab Babkbak Community</p>
-          <p className={classes.services}>UI/UX Design, Website Design</p>
-        </div>
-      </div>
-
-      <div className={classes.portfolioContainer}>
-        <div className={classes.portfolio}>
-          <img alt="Ajab Babkbak Community" src={portfolio1} />
-          <p className={classes.name}>Ajab Babkbak Community</p>
-          <p className={classes.services}>UI/UX Design, Website Design</p>
-        </div>
+        {portfolioList.map((portfolio) => (
+          <PortfolioCard key={portfolio.name} {...portfolio} />
+        ))}
       </div>
     </div>
   );
