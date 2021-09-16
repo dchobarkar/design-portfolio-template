@@ -1,105 +1,82 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
+import { Link } from "react-router-dom";
 
+import ServiceCard from "../../../CustomComponents/ServiceCard/ServiceCard";
+
+//CSS
 const useStyles = makeStyles({
   root: {
     minHeight: "var(--minHeight)",
     width: "100%",
     display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "var(--gray-100)",
-  },
-  serviceContainer: {
-    maxWidth: "300px",
-    height: "300px",
-    display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    padding: "2rem",
+    padding: "2rem 0",
+    backgroundColor: "var(--gray-100)",
   },
-  service: {
-    fontSize: "1.1rem",
-    fontWeight: "600",
+  serviceCardContainer: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  serviceLink: {
+    width: "200px",
+    margin: "1rem",
+    padding: "0.5rem 1rem",
+    fontSize: "1.5rem",
     textAlign: "center",
-    padding: "1rem",
-  },
-  description: {
-    fontSize: "1rem",
-    textAlign: "justify",
+    textDecoration: "none",
+    color: "var(--secondary-text)",
+    backgroundColor: "transperant",
+    border: "1px solid var(--gray)",
+    borderRadius: "10rem",
+    transition: "all 0.5s ease",
+
+    "&:hover": {
+      transform: "scale(1.1)",
+      color: "var(--primary-text)",
+      backgroundColor: "var(--gray-900)",
+      transition: "all 0.5s ease",
+    },
   },
 });
+
+// Services to be shown
+const services = [
+  {
+    title: "DESIGN + DEVELOPMENT",
+    description:
+      "Clean & modern designs - optimized for performance, search engines, and converting users to consumers.",
+  },
+  {
+    title: "E-COMMERCE",
+    description:
+      "Integration of eCommerce platforms, payment gateways, custom products templates, and more.",
+  },
+  {
+    title: "SEO ( SEARCH ENGINE OPTIMIZATION )",
+    description:
+      "Improve and promote your website in order to increase the number of visitors it receives.",
+  },
+];
 
 function Services(props) {
   const classes = useStyles();
 
   return (
     <section className={classes.root}>
-      <div className={classes.serviceContainer}>
-        <p className={classes.service}>DESIGN + DEVELOPMENT</p>
-        <p className={classes.description}>
-          Clean & modern designs - optimized for performance, search engines,
-          and converting users to consumers.
-        </p>
+      <div className={classes.serviceCardContainer}>
+        {services.map((service) => (
+          <ServiceCard key={service.title} {...service} />
+        ))}
       </div>
 
-      <div className={classes.serviceContainer}>
-        <p className={classes.service}>ECOMMERCE</p>
-        <p className={classes.description}>
-          Integration of eCommerce platforms, payment gateways, custom products
-          templates, and more.
-        </p>
-      </div>
-
-      <div className={classes.serviceContainer}>
-        <p className={classes.service}>ANALYTICS</p>
-        <p className={classes.description}>
-          Get insights into who is browsing your site so that you can make
-          smarter business decisions.
-        </p>
-      </div>
-
-      <div className={classes.serviceContainer}>
-        <p className={classes.service}>LOGO DESIGN</p>
-        <p className={classes.description}>
-          A processional yet creative logo that reflects your company's spirit
-          and leaves a lasting, memorable effects.
-        </p>
-      </div>
-
-      <div className={classes.serviceContainer}>
-        <p className={classes.service}>MOBILE FRIENDLY</p>
-        <p className={classes.description}>
-          A responsive design that makes your website accessible to all users,
-          regardless of their device.
-        </p>
-      </div>
-
-      <div className={classes.serviceContainer}>
-        <p className={classes.service}>SEO ( SEARCH ENGINE OPTIMIZATION )</p>
-        <p className={classes.description}>
-          Improve and promote your website in order to increase the number of
-          visitors it receives.
-        </p>
-      </div>
-
-      <div className={classes.serviceContainer}>
-        <p className={classes.service}>SOCIAL MEDIA INTEGRATION</p>
-        <p className={classes.description}>
-          Enable your website to post updates on facebook, display twitter feed,
-          and link your social media accounts.
-        </p>
-      </div>
-
-      <div className={classes.serviceContainer}>
-        <p className={classes.service}>WEBSITE AUDITS</p>
-        <p className={classes.description}>
-          Looking to improve your page performance, SEO, or user experience?
-          Request a free site audit.
-        </p>
-      </div>
+      <Link className={classes.serviceLink} to="/services">
+        More
+      </Link>
     </section>
   );
 }

@@ -1,69 +1,61 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
-import featureWork1 from "../../../Assets/img/featureWork1.webp";
+import PortfolioCard from "../../../CustomComponents/PortfolioCard/PortfolioCard";
 
+// Image imports
+import ABCommunity from "../../../Assets/img/portfolio/ABCommunity.png";
+
+// CSS
 const useStyles = makeStyles({
   root: {
     minHeight: "var(--minHeight)",
     width: "100%",
     display: "flex",
-    flexWrap: "wrap",
+    flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "var(--gray-100)",
+    backgroundColor: "var(--gray-300)",
   },
-  featureWorkContainer: {
-    width: "100%",
+  portfolioContainer: {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
     alignItems: "center",
-  },
-  imageContainer: {
-    width: "40%",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  introContainer: {
-    width: "60%",
-    padding: "4rem",
-  },
-  name: {
-    padding: "1rem",
-    fontWeight: "600",
-    textAlign: "center",
-  },
-  description: {
-    padding: "1rem",
-    textAlign: "center",
-  },
-  button: {
-    padding: "0.5rem",
-    color: "var(--primary-text)",
-    backgroundColor: "var(--accent)",
-    border: "none",
-    float: "right",
   },
 });
+
+// Portfolio list
+const portfolioList = [
+  {
+    name: "A B Community",
+    imageURL: ABCommunity,
+    services: "UI/UX Design, Development",
+    websiteURL: "www.abcommunity.com",
+  },
+  {
+    name: "Mahesh Finance Services",
+    imageURL: ABCommunity,
+    services: "UI/UX Design, Development",
+    websiteURL: "www.abcommunity.com",
+  },
+  {
+    name: "ChemPro Services",
+    imageURL: ABCommunity,
+    services: "UI/UX Design, Development",
+    websiteURL: "www.abcommunity.com",
+  },
+];
 
 function FeatureWork(props) {
   const classes = useStyles();
 
   return (
     <section className={classes.root}>
-      <h3> Here's a sampling of what I've been up to lately.</h3>
-      <div className={classes.featureWorkContainer}>
-        <div className={classes.imageContainer}>
-          <img alt="Feature Work 1" src={featureWork1} />
-        </div>
-
-        <div className={classes.introContainer}>
-          <p className={classes.name}>Ajab Bakbak Community</p>
-          <p className={classes.description}>Anand will tell me about it</p>
-          <button className={classes.button}>Visit site</button>
-        </div>
+      <div className={classes.portfolioContainer}>
+        {portfolioList.map((portfolio) => (
+          <PortfolioCard key={portfolio.name} {...portfolio} />
+        ))}
       </div>
     </section>
   );

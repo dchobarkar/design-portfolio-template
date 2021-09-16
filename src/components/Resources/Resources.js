@@ -1,7 +1,7 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
-import BlogImg1 from "../../Assets/img/portfolio/portfolio1.png";
+import BlogImg1 from "../../Assets/img/portfolio/ABCommunity.png";
 
 const useStyles = makeStyles({
   root: {
