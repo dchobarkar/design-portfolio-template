@@ -19,7 +19,7 @@ const useStyle = makeStyles({
   "@media only screen and (min-width: 961px)": {
     ...NavbarCSS["@media only screen and (min-width: 961px)"],
     root: {
-      ...NavbarCSS["@media only screen and (min-width: 961px)"],
+      ...NavbarCSS["@media only screen and (min-width: 961px)"].root,
       backgroundColor: (props) => props.backgroundColor,
 
       "& a:link,a:visited": {

@@ -3,54 +3,17 @@ import { makeStyles } from "@material-ui/styles";
 
 import Developer from "../../../Assets/img/Developer.png";
 
-const useStyles = makeStyles({
-  root: {
-    minHeight: "var(--minHeight)",
-    width: "100%",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  image: {
-    width: "75vw",
-  },
-  aboutIntro: {
-    width: "100%",
-    padding: "2rem 3rem",
-    fontFamily: "Lato",
-    fontSize: "1.2rem",
-    lineHeight: "1.5rem",
-    textAlign: "justify",
-  },
+import { AboutCSS } from "./About.css";
 
-  /* Tablet view */
-  "@media only screen and (min-width: 401px) and (max-width: 960px)": {
-    root: {
-      flexDirection: "row-reverse",
-    },
-    aboutIntro: {
-      fontSize: "1.3rem",
-    },
-  },
-
-  /* Desktop view */
-  "@media only screen and (min-width: 961px)": {
-    root: {
-      flexDirection: "row-reverse",
-    },
-    aboutIntro: {
-      fontSize: "1.3rem",
-    },
-  },
-});
+// CSS
+const useStyles = makeStyles({ ...AboutCSS });
 
 function About(props) {
   const classes = useStyles();
 
   return (
     <section className={classes.root}>
-      <img className={classes.image} alt="Developer" src={Developer} />
+      <img className={classes.image} alt="Darshan Chobarkar" src={Developer} />
 
       <p className={classes.aboutIntro}>
         Hi, I am Darshan Chobarkar, a passionate self taught web developer from
