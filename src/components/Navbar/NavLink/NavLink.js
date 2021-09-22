@@ -1,60 +1,18 @@
 import React from "react";
+import clsx from "clsx";
 import { Link, useRouteMatch } from "react-router-dom";
 import { makeStyles } from "@material-ui/styles";
-import clsx from "clsx";
+
+import { NavLinkCSS } from "./NavLink.css";
 
 // CSS
-const useStyles = makeStyles({
-  tab: {
-    width: "100%",
-    padding: "30px 0",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
+const useStyles = makeStyles({ ...NavLinkCSS });
 
-    /* Tablet view */
-    "@media only screen and (min-width: 401px) and (max-width: 960px)": {
-      width: "unset",
-      height: "85px",
-      padding: "0px 20px",
-      transition: "all 0.5s ease",
-    },
-
-    /* Desktop view */
-    "@media only screen and (min-width: 961px)": {
-      width: "unset",
-      height: "85px",
-      padding: "0px 20px",
-      transition: "all 0.5s ease",
-    },
-  },
-  active: {
-    backgroundColor: "var(--primary-700)",
-
-    /* Tablet view */
-    "@media only screen and (min-width: 401px) and (max-width: 960px)": {
-      height: "85px",
-      boxShadow: "0 8px 8px -4px lightblue",
-      transition: "all 0.5s ease",
-    },
-
-    /* Desktop view */
-    "@media only screen and (min-width: 961px)": {
-      height: "85px",
-      boxShadow: "0 8px 8px -4px lightblue",
-      transition: "all 0.5s ease",
-    },
-  },
-});
-
-function NavLink({ label, to, isActive, onClick }) {
+function NavLink({ label, to, onClick }) {
   const classes = useStyles();
 
   // Flag variable to check active status of link
-  let match = useRouteMatch({
-    path: to,
-    exact: isActive,
-  });
+  const match = useRouteMatch({ path: to });
 
   return (
     <li

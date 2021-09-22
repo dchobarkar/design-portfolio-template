@@ -1,125 +1,83 @@
 import React from "react";
+import clsx from "clsx";
 import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
-import clsx from "clsx";
 import { makeStyles } from "@material-ui/styles";
 
-import { ReactComponent as CloseIcon } from "../../Assets/navbar/Close.svg";
-import { ReactComponent as MenuIcon } from "../../Assets/navbar/Menu.svg";
+import { ReactComponent as CloseIcon } from "../../Assets/svg/Close.svg";
+import { ReactComponent as MenuIcon } from "../../Assets/svg/Menu.svg";
 
 import NavLink from "./NavLink/NavLink";
 
+import { NavbarCSS } from "./Navbar.css";
+
 // CSS
 const useStyle = makeStyles({
-  root: {
-    height: "80px",
-    padding: "0px 20px",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    position: "relative",
-    zIndex: "1",
-    fontFamily: "Dosis",
-    fontSize: "1.3rem",
-    color: "var(--primary-text)",
-    background: "linear-gradient(#6616fc, #f394d3)",
-    boxShadow: "0 10px 6px -6px #777",
-
-    "& a:link,a:visited": {
-      color: "var(--primary-text)",
-      transition: "all 0.5s ease",
-      textDecoration: "none",
-    },
-
-    "& a:hover": {
-      color: "var(--gray-700)",
-      transition: "all 0.5s ease",
-    },
-  },
-
-  brand: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    fontSize: "1.5rem",
-  },
-
-  menu: {
-    width: "100%",
-    height: "var(--minHeight)",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    position: "absolute",
-    top: "80px",
-    left: "-100%",
-    opacity: "0",
-    transition: "all 0.5s ease",
-    listStyleType: "none",
-  },
-  open: {
-    zIndex: "1",
-    left: "0",
-    opacity: "1",
-    transition: "all 0.5s ease",
-    background: "#9899d1",
-  },
-
-  navbarIcon: { display: "block" },
-
-  icon: {
-    width: "45px",
-    height: "45px",
-  },
-
-  /* Tablet view */
-  "@media only screen and (min-width: 401px) and (max-width: 960px)": {
-    root: {
-      padding: "0px 40px",
-    },
-
-    brand: {
-      fontSize: "1.7rem",
-    },
-
-    menu: {
-      flexDirection: "row",
-      justifyContent: "flex-end",
-      position: "static",
-      opacity: "1",
-    },
-
-    navbarIcon: {
-      display: "none",
-    },
-  },
+  ...NavbarCSS,
 
   /* Desktop view */
   "@media only screen and (min-width: 961px)": {
+    ...NavbarCSS["@media only screen and (min-width: 961px)"],
     root: {
-      padding: "0px 40px",
-    },
+      ...NavbarCSS["@media only screen and (min-width: 961px)"],
+      backgroundColor: (props) => props.backgroundColor,
 
-    brand: {
-      fontSize: "1.7rem",
-    },
-
-    menu: {
-      flexDirection: "row",
-      justifyContent: "flex-end",
-      position: "static",
-      opacity: "1",
-    },
-
-    navbarIcon: {
-      display: "none",
+      "& a:link,a:visited": {
+        color: (props) => props.color,
+      },
     },
   },
 });
 
+// Function to get background color and text color according to location
+const getBackgroundColor = (location) => {
+  let modifiedObject = {};
+
+  switch (location) {
+    case "/":
+      modifiedObject = {
+        color: NavbarCSS.blue.color,
+        backgroundColor: NavbarCSS.blue.backgroundColor,
+      };
+      break;
+
+    case "/portfolio":
+      modifiedObject = {
+        color: NavbarCSS.orange.color,
+        backgroundColor: NavbarCSS.orange.backgroundColor,
+      };
+      break;
+
+    case "/services":
+      modifiedObject = {
+        color: NavbarCSS.yellow.color,
+        backgroundColor: NavbarCSS.yellow.backgroundColor,
+      };
+      break;
+
+    case "/resources":
+      modifiedObject = {
+        color: NavbarCSS.white.color,
+        backgroundColor: NavbarCSS.white.backgroundColor,
+      };
+      break;
+
+    case "/about":
+      modifiedObject = {
+        color: NavbarCSS.gray.color,
+        backgroundColor: NavbarCSS.gray.backgroundColor,
+      };
+      break;
+    default:
+      break;
+  }
+
+  return modifiedObject;
+};
+
 function Navbar(props) {
-  const classes = useStyle();
+  const colorProps = getBackgroundColor(props.location.pathname);
+  const classes = useStyle(colorProps);
 
   // Flag to handle navbar state (Mobile view only)
   const [isOpen, setIsOpen] = React.useState(false);
