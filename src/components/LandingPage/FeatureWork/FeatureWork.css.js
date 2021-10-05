@@ -1,12 +1,11 @@
 export const FeatureWorkCSS = {
   root: {
-    minHeight: "90vh",
+    minHeight: "var(--minHeight)",
     padding: "20px 30px",
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#E6EEEC",
   },
 
   /* Tablet view */
