@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/styles";
 import { Link } from "react-router-dom";
 
 import ServiceCard from "../../../CustomComponents/ServiceCard/ServiceCard";
-
 import { ServicesList } from "./Services.list";
 import { ServicesCSS } from "./Service.css";
 
