@@ -1,6 +1,6 @@
 export const FooterCSS = {
   root: {
-    padding: "1rem",
+    padding: "1rem 30px",
     fontFamily: "Montserrat",
     fontWeight: "400",
     fontSize: "1rem",
@@ -13,6 +13,20 @@ export const FooterCSS = {
       top: "3px",
       color: "red",
       fill: "red",
+    },
+  },
+
+  /* Tablet view */
+  "@media only screen and (min-width: 401px) and (max-width: 960px)": {
+    root: {
+      padding: "1rem 60px",
+    },
+  },
+
+  /* Desktop view */
+  "@media only screen and (min-width: 961px)": {
+    root: {
+      padding: "1rem 120px",
     },
   },
 };
