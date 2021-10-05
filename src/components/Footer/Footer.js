@@ -2,27 +2,10 @@ import React from "react";
 import { makeStyles } from "@material-ui/styles";
 import { Heart } from "react-feather";
 
-// CSS
-const useStyles = makeStyles({
-  root: {
-    padding: "1rem",
-    position: "relative",
-    zIndex: "1",
-    fontFamily: "lato",
-    fontSize: "1.1rem",
-    textAlign: "center",
-    color: "var(--primary-text)",
-    backgroundColor: "var(--primary-300)",
-    boxShadow: "0 -10px 6px -6px #777",
+import { FooterCSS } from "./Footer.css";
 
-    "& svg": {
-      position: "relative",
-      top: "3px",
-      color: "red",
-      fill: "red",
-    },
-  },
-});
+// CSS
+const useStyles = makeStyles({ ...FooterCSS });
 
 function Footer(props) {
   const classes = useStyles();
