@@ -13,10 +13,6 @@ export const NavLinkCSS = {
     tab: {
       padding: "0px 1rem",
     },
-    active: {
-      borderBottomWidth: "1px",
-      borderBottomStyle: "solid",
-      transition: "all 0.5s ease",
-    },
+    active: {},
   },
 };

@@ -9,7 +9,6 @@ export const NavbarCSS = {
     fontWeight: "400",
 
     "& a:link,a:visited": {
-      color: "#212121",
       textDecoration: "none",
     },
   },
@@ -35,8 +34,6 @@ export const NavbarCSS = {
     zIndex: "1",
     top: "4rem",
     opacity: "1",
-    backgroundImage:
-      "linear-gradient(to right bottom, #fffefe, #fdfcfd, #fcfbfc, #faf9fa, #f8f8f9, #f4f4f5, #efeff0, #ebebec, #e3e3e4, #dbdbdc, #d4d4d4, #cccccc)",
     transition: "all 0.7s ease",
   },
 
@@ -77,26 +74,5 @@ export const NavbarCSS = {
     navbarIcon: {
       display: "none",
     },
-  },
-
-  blue: {
-    backgroundColor: "#1747BF",
-    color: "#ffffff",
-  },
-  orange: {
-    backgroundColor: "#F96342",
-    color: "#ffffff",
-  },
-  yellow: {
-    backgroundColor: "#FEE832",
-    color: "#363323",
-  },
-  white: {
-    backgroundColor: "#ffffff",
-    color: "#363323",
-  },
-  gray: {
-    backgroundColor: "#E6EEEC",
-    color: "#F96549",
   },
 };
