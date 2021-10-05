@@ -1,11 +1,10 @@
 export const TestimonialsCSS = {
   root: {
-    height: "70vh",
+    minHeight: "var(--minHeight)",
     padding: "0 30px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#E6EEEC",
   },
 
   /* Tablet view */
