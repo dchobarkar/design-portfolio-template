@@ -2,32 +2,17 @@ import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
 import aboutBackground from "../../Assets/video/aboutBackground.mp4";
+import { AboutCSS } from "./About.css";
 
-const useStyles = makeStyles({
-  root: {
-    minHeight: "var(--minHeight)",
-    width: "100%",
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  aboutBackgroundVideo: {
-    position: "fixed",
-    zIndex: "-1",
-    left: "0",
-    top: "4rem",
-    minWidth: "100%",
-    minHeight: "100%",
-  },
-});
+// CSS
+const useStyles = makeStyles({ ...AboutCSS });
 
 function About(props) {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <video className={classes.aboutBackgroundVideo} autoPlay muted loop>
+      <video className={classes.video} autoPlay muted>
         <source src={aboutBackground} type="video/mp4"></source>
       </video>
     </div>
