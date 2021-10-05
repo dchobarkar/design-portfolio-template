@@ -7,7 +7,7 @@ export const IntroCSS = {
     alignItems: "center",
   },
   header: {
-    fontFamily: "Dosis",
+    fontFamily: "'Dosis',sans-serif",
     fontWeight: "700",
     fontSize: "2rem",
     textAlign: "center",

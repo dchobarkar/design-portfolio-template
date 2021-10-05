@@ -8,7 +8,7 @@ export const TestimonialListCSS = {
   },
   header: {
     padding: "2rem",
-    fontFamily: "Dosis",
+    fontFamily: "Dosis,sans-serif",
     fontWeight: "400",
     fontSize: "2rem",
     textAlign: "center",

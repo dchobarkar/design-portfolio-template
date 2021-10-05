@@ -13,7 +13,7 @@ export const BlogPostCardCSS = {
   },
   header: {
     paddingBottom: "0.5rem",
-    fontFamily: "Dosis",
+    fontFamily: "Dosis,sans-serif",
     fontWeight: "500",
     fontSize: "1.5rem",
   },
@@ -22,7 +22,7 @@ export const BlogPostCardCSS = {
     display: "flex",
     justifyContent: "flex-start",
     alignItems: "center",
-    fontFamily: "Lato",
+    fontFamily: "Lato,sans-serif",
     fontWeight: "300",
     fontStyle: "normal",
 
@@ -34,12 +34,12 @@ export const BlogPostCardCSS = {
   },
   abstract: {
     padding: "0.5rem 0",
-    fontFamily: "Lato",
+    fontFamily: "Lato,sans-serif",
     fontWeight: "400",
     fontStyle: "normal",
   },
   link: {
-    fontFamily: "Lato",
+    fontFamily: "Lato,sans-serif",
     fontWeight: "400",
     fontStyle: "normal",
     fontSize: "0.8rem",

@@ -55,18 +55,43 @@ export const TestimonialCarouselCSS = {
   },
   comment: {
     padding: "1rem",
-    fontSize: "1.2rem",
-    fontWeight: "500",
+    fontFamily: "Montserrat,sans-serif",
+    fontWeight: "600",
+    fontStlye: "italic",
+    fontSize: "1.1rem",
   },
   image: {
     width: "50px",
   },
   name: {
+    fontFamily: "Dosis,sans-serif",
+    fontWeight: "500",
     fontSize: "0.8rem",
-    fontWeight: "700",
   },
   websiteURL: {
-    fontSize: "0.8rem",
+    fontFamily: "Lato,sans-serif",
+    fontWeight: "300",
     fontStyle: "italic",
+    fontSize: "0.8rem",
+  },
+
+  /* Tablet view */
+  "@media only screen and (min-width: 401px) and (max-width: 960px)": {
+    comment: {
+      fontSize: "1.5rem",
+    },
+    name: {
+      fontSize: "0.9rem",
+    },
+  },
+
+  /* Desktop view */
+  "@media only screen and (min-width: 961px)": {
+    comment: {
+      fontSize: "2rem",
+    },
+    name: {
+      fontSize: "1rem",
+    },
   },
 };

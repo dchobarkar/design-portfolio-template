@@ -21,16 +21,16 @@ export const ServiceCardCSS = {
   },
   title: {
     padding: "1rem",
-    fontFamily: "Dosis",
+    fontFamily: "Dosis,sans-serif",
     fontWeight: "500",
     fontSize: "1.1rem",
     textAlign: "center",
     transition: "all ease-in 100ms",
   },
   description: {
-    fontFamily: "Lato",
+    fontFamily: "Lato,sans-serif",
     fontWeight: "300",
-    fontSize: "1rem",
+    fontSize: "0.8rem",
     textAlign: "justify",
   },
 
@@ -52,7 +52,7 @@ export const ServiceCardCSS = {
       maxWidth: "300px",
     },
     title: {
-      fontSize: "1.3rem",
+      fontSize: "1.5rem",
     },
   },
 };

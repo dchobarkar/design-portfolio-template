@@ -10,8 +10,8 @@ export const ContactCSS = {
   header: {
     width: "100%",
     padding: "20px 0",
-    fontFamily: "Lato",
-    fontWeight: "700",
+    fontFamily: "Lato,sans-serif",
+    fontWeight: "600",
     fontStyle: "italic",
     fontSize: "2rem",
     textAlign: "center",
@@ -48,13 +48,16 @@ export const ContactCSS = {
     },
 
     "& label": {
+      fontFamily: "Montserrat,sans-serif",
+      fontWeight: "500",
       marginBottom: "1rem",
     },
 
     "& button": {
       padding: "0.5rem",
+      fontFamily: "Montserrat,sans-serif",
+      fontWeight: "600",
       fontSize: "1.3rem",
-      fontWeight: "bold",
       borderRadius: "0.5rem",
     },
   },

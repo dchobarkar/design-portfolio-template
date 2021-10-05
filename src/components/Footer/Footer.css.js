@@ -1,7 +1,7 @@
 export const FooterCSS = {
   root: {
     padding: "1rem 30px",
-    fontFamily: "Montserrat",
+    fontFamily: "Montserrat,sans-serif",
     fontWeight: "400",
     fontSize: "1rem",
     textAlign: "center",

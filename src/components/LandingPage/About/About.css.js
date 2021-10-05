@@ -14,7 +14,7 @@ export const AboutCSS = {
   },
   aboutIntro: {
     padding: "2rem 0",
-    fontFamily: "Lato",
+    fontFamily: "'Lato',sans-serif",
     fontWeight: "400",
     fontStyle: "italic",
     fontSize: "1.2rem",

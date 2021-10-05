@@ -13,6 +13,8 @@ export const TestimonialCardCSS = {
   comment: {
     padding: "1rem",
     lineHeight: "2rem",
+    fontFamily: "Dosis,sans-serif",
+    fontWeight: "500",
     fontSize: "1.5rem",
     textAlign: "center",
   },
@@ -22,10 +24,15 @@ export const TestimonialCardCSS = {
   },
   name: {
     padding: "0.5rem",
+    fontFamily: "Lato,sans-serif",
+    fontWeight: "400",
     fontSize: "1rem",
     letterSpacing: "0.1rem",
   },
   websiteURL: {
+    fontFamily: "Lato,sans-serif",
+    fontWeight: "300",
+    fontStyle: "italic",
     fontSize: "0.8rem",
   },
 };

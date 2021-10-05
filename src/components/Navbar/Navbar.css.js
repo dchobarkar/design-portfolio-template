@@ -5,8 +5,7 @@ export const NavbarCSS = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    fontFamily: "Montserrat",
-    fontWeight: "400",
+    fontFamily: "'Montserrat', sans-serif",
 
     "& a:link,a:visited": {
       textDecoration: "none",
@@ -14,19 +13,22 @@ export const NavbarCSS = {
   },
 
   brand: {
+    fontWeight: "500",
     fontSize: "1.5rem",
   },
 
   menu: {
     width: "100%",
     height: "100vh",
+    position: "absolute",
+    top: "-100%",
+    left: "0",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    position: "absolute",
-    top: "-100%",
-    left: "0",
+    fontWeight: "400",
+    fontSize: "1rem",
     opacity: "0",
     transition: "all 0.7s ease",
   },
@@ -65,9 +67,9 @@ export const NavbarCSS = {
     },
 
     menu: {
+      position: "static",
       flexDirection: "row",
       justifyContent: "flex-end",
-      position: "static",
       opacity: "1",
     },
 

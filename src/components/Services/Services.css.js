@@ -12,7 +12,7 @@ export const ServicesCSS = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    fontFamily: "Dosis",
+    fontFamily: "Dosis,sans-serif",
     fontWeight: "400",
     fontSize: "3rem",
     letterSpacing: "3px",

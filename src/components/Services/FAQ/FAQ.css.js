@@ -8,8 +8,8 @@ export const FAQCSS = {
   },
   header: {
     width: "70vw",
-    fontFamily: "Dosis",
-    fontWeight: "300",
+    fontFamily: "Dosis,sans-serif",
+    fontWeight: "400",
     fontSize: "2rem",
     textAlign: "center",
   },

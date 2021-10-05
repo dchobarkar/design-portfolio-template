@@ -11,10 +11,13 @@ export const PortfolioCardCSS = {
   },
   name: {
     padding: "0.5rem",
-    fontSize: "0.8rem",
+    fontFamily: "Dosis,sans-serif",
     fontWeight: "500",
+    fontSize: "1.2rem",
   },
   services: {
+    fontFamily: "Lato,sans-serif",
+    fontWeight: "300",
     fontSize: "0.7rem",
   },
 };

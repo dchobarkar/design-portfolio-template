@@ -11,7 +11,7 @@ export const PortfolioCSS = {
   header: {
     width: "100%",
     padding: "3rem 0",
-    fontFamily: "Dosis",
+    fontFamily: "Dosis,sans-serif",
     fontWeight: "400",
     fontSize: "1.5rem",
     textAlign: "center",
