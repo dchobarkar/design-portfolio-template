@@ -1,12 +1,11 @@
 export const AboutCSS = {
   root: {
-    minHeight: "90vh",
+    minHeight: "var(--minHeight)",
     padding: "0px 30px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#1444C1",
   },
   image: {
     width: "75vw",
@@ -16,12 +15,11 @@ export const AboutCSS = {
   aboutIntro: {
     padding: "2rem 0",
     fontFamily: "Lato",
-    fontStyle: "italic",
     fontWeight: "400",
+    fontStyle: "italic",
     fontSize: "1.2rem",
     lineHeight: "1.5rem",
     textAlign: "justify",
-    color: "#ffffff",
   },
 
   /* Tablet view */
