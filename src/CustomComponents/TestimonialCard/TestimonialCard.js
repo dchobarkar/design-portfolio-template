@@ -1,32 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
+import { TestimonialCardCSS } from "./TestimonialCard.css";
+
 // CSS
-const useStyles = makeStyles({
-  root: {
-    minHeight: "400px",
-    width: "300px",
-    margin: "1rem",
-    padding: "2rem 0",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    borderRadius: "0.5rem",
-    background: "var(--gray-300)",
-  },
-  comment: {
-    padding: "1rem",
-    lineHeight: "2rem",
-    fontSize: "1.5rem",
-    textAlign: "center",
-  },
-  image: { width: "50px", margin: "1rem" },
-  name: { padding: "0.5rem", fontSize: "1rem", letterSpacing: "0.1rem" },
-  websiteURL: {
-    fontSize: "0.8rem",
-  },
-});
+const useStyles = makeStyles({ ...TestimonialCardCSS });
 
 function TestimonialCard(props) {
   const classes = useStyles();
