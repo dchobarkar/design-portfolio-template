@@ -1,26 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
-const useStyles = makeStyles({
-  root: {
-    margin: "1rem",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  image: {
-    width: "20rem",
-  },
-  name: {
-    padding: "0.5rem",
-    fontSize: "0.8rem",
-    fontWeight: "500",
-  },
-  services: {
-    fontSize: "0.7rem",
-  },
-});
+import { PortfolioCardCSS } from "./PortfolioCard.css";
+
+// CSS
+const useStyles = makeStyles({ ...PortfolioCardCSS });
 
 function PortfolioCard(props) {
   const classes = useStyles();
