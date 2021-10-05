@@ -1,12 +1,11 @@
 export const ServicesCSS = {
   root: {
-    minHeight: "90vh",
+    minHeight: "var(--minHeight)",
     padding: "20px 30px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#204EC6",
   },
   serviceCardContainer: {
     display: "flex",
@@ -24,15 +23,11 @@ export const ServicesCSS = {
     fontSize: "1.5rem",
     textAlign: "center",
     textDecoration: "none",
-    color: "#ffffff",
-    border: "1px solid #ffffff",
     borderRadius: "1rem",
     transition: "all 0.5s ease",
 
     "&:hover": {
       transform: "scale(1.1)",
-      color: "#97FFCB",
-      border: "1px solid #97FFCB",
       transition: "all 0.5s ease",
     },
   },
