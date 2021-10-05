@@ -1,28 +1,25 @@
 export const ContactCSS = {
   root: {
-    height: "90vh",
-    padding: "0 30px",
+    minHeight: "var(--minHeight)",
+    padding: "20px 30px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#E6EEEC",
   },
   header: {
     width: "100%",
     padding: "20px 0",
     fontFamily: "Lato",
-    fontStyle: "italic",
     fontWeight: "700",
+    fontStyle: "italic",
     fontSize: "2rem",
     textAlign: "center",
-    color: "#365FC7",
   },
   formContainer: {
     width: "100%",
     padding: "2rem",
     borderRadius: "1rem",
-    backgroundColor: "#F1F4F4",
   },
 
   formRow: {
@@ -32,7 +29,6 @@ export const ContactCSS = {
     justifyContent: "flex-start",
     fontStyle: "Montserrat",
     fontWeight: "500",
-    color: "#212020",
 
     "& input": {
       width: "100%",
@@ -40,7 +36,6 @@ export const ContactCSS = {
       fontSize: "1rem",
       border: "none",
       borderRadius: "0.5rem",
-      backgroundColor: "#FFFFFF",
     },
 
     "& textarea": {
@@ -50,7 +45,6 @@ export const ContactCSS = {
       fontSize: "1rem",
       border: "none",
       borderRadius: "0.5rem",
-      backgroundColor: "#FFFFFF",
     },
 
     "& label": {
@@ -61,7 +55,6 @@ export const ContactCSS = {
       padding: "0.5rem",
       fontSize: "1.3rem",
       fontWeight: "bold",
-      border: "1px solid #E6EEEC",
       borderRadius: "0.5rem",
     },
   },
@@ -84,7 +77,7 @@ export const ContactCSS = {
   /* Desktop view */
   "@media only screen and (min-width: 961px)": {
     root: {
-      padding: "0px 120px",
+      padding: "20px 120px",
       flexDirection: "row",
       justifyContent: "space-between",
     },
