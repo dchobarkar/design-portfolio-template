@@ -26,6 +26,11 @@ const About = React.lazy(() => {
   return import("./components/About/About");
 });
 
+// Blogpost imports
+const ImportanceOfColorScheme = React.lazy(() => {
+  return import("./components/Resources/Posts/ImportanceOfColorScheme/Post");
+});
+
 function App(props) {
   return (
     <BrowserRouter>
@@ -58,6 +63,13 @@ function App(props) {
           />
 
           <Route path="/about" exact render={(props) => <About {...props} />} />
+
+          {/* Blogpost routes */}
+          <Route
+            path="/resources/importance-of-color-scheme-in-website"
+            exact
+            render={(props) => <ImportanceOfColorScheme {...props} />}
+          />
         </Switch>
       </Suspense>
 
