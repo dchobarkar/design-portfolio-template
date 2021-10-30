@@ -1,12 +1,13 @@
 import React from "react";
-import { makeStyles } from "@material-ui/styles";
 import { Heart } from "react-feather";
+import { makeStyles } from "@material-ui/styles";
 
-import { FooterCSS } from "./Footer.css";
+import FooterCSS from "./Footer.css";
 
 // CSS
 const useStyles = makeStyles({ ...FooterCSS });
 
+// Driver component
 function Footer(props) {
   const classes = useStyles();
 

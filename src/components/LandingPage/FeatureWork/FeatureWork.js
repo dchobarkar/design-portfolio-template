@@ -2,12 +2,13 @@ import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
 import PortfolioCard from "../../../CustomComponents/PortfolioCard/PortfolioCard";
-import { FeatureWorkList } from "./FeatureWork.list";
-import { FeatureWorkCSS } from "./FeatureWork.css";
+import FeatureWorkList from "./FeatureWork.list";
+import FeatureWorkCSS from "./FeatureWork.css";
 
 // CSS
 const useStyles = makeStyles({ ...FeatureWorkCSS });
 
+// Driver component
 function FeatureWork(props) {
   const classes = useStyles();
 

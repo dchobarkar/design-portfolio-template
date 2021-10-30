@@ -1,7 +1,7 @@
 // Image imports
 import ABCommunity from "../../Assets/img/portfolio/ABCommunity.png";
 
-export const PortfolioList = [
+const PortfolioList = [
   {
     name: "A B Community",
     imageURL: ABCommunity,
@@ -33,3 +33,5 @@ export const PortfolioList = [
     websiteURL: "www.abcommunity.com",
   },
 ];
+
+export default PortfolioList;

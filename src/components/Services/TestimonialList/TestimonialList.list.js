@@ -1,7 +1,7 @@
 // Testimonial images
 import AnandKulkarni from "../../../Assets/img/testimonials/AnandKulkarni.png";
 
-export const TestimonialListList = [
+const TestimonialListList = [
   {
     comment: "Darshan is an awesome web designer and developer!",
     imgURL: AnandKulkarni,
@@ -30,3 +30,5 @@ export const TestimonialListList = [
     websiteURL: "b2blauncher.com",
   },
 ];
+
+export default TestimonialListList;

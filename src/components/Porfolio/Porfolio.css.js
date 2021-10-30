@@ -1,4 +1,4 @@
-export const PortfolioCSS = {
+const PortfolioCSS = {
   root: {
     minHeight: "var(--minHeight)",
     width: "100%",
@@ -8,6 +8,7 @@ export const PortfolioCSS = {
     justifyContent: "center",
     alignItems: "center",
   },
+
   header: {
     width: "100%",
     padding: "3rem 0",
@@ -16,6 +17,7 @@ export const PortfolioCSS = {
     fontSize: "1.5rem",
     textAlign: "center",
   },
+
   portfolioContainer: {
     display: "flex",
     flexWrap: "wrap",
@@ -28,6 +30,7 @@ export const PortfolioCSS = {
     root: {
       padding: "0px 60px",
     },
+
     header: {
       fontSize: "2rem",
     },
@@ -38,8 +41,11 @@ export const PortfolioCSS = {
     root: {
       padding: "0px 120px",
     },
+
     header: {
       fontSize: "2rem",
     },
   },
 };
+
+export default PortfolioCSS;

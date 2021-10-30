@@ -1,4 +1,4 @@
-export const TestimonialsCSS = {
+const TestimonialsCSS = {
   root: {
     minHeight: "var(--minHeight)",
     padding: "0 30px",
@@ -21,3 +21,5 @@ export const TestimonialsCSS = {
     },
   },
 };
+
+export default TestimonialsCSS;

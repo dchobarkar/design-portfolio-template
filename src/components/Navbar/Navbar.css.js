@@ -1,4 +1,4 @@
-export const NavbarCSS = {
+const NavbarCSS = {
   root: {
     height: "4rem",
     padding: "0px 30px",
@@ -32,6 +32,7 @@ export const NavbarCSS = {
     opacity: "0",
     transition: "all 0.7s ease",
   },
+
   open: {
     zIndex: "1",
     top: "4rem",
@@ -78,3 +79,5 @@ export const NavbarCSS = {
     },
   },
 };
+
+export default NavbarCSS;

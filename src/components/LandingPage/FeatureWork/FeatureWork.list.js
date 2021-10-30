@@ -1,7 +1,7 @@
 // Image imports
 import ABCommunity from "../../../Assets/img/portfolio/ABCommunity.png";
 
-export const FeatureWorkList = [
+const FeatureWorkList = [
   {
     name: "A B Community",
     imageURL: ABCommunity,
@@ -21,3 +21,5 @@ export const FeatureWorkList = [
     websiteURL: "www.abcommunity.com",
   },
 ];
+
+export default FeatureWorkList;

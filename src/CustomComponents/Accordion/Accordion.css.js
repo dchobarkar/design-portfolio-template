@@ -1,7 +1,8 @@
-export const AccordionCSS = {
+const AccordionCSS = {
   root: {
     width: "100%",
   },
+
   question: {
     padding: "2rem",
     display: "flex",
@@ -17,6 +18,7 @@ export const AccordionCSS = {
       transition: "all 0.5s ease",
     },
   },
+
   icon: {
     width: "15px",
     height: "15px",
@@ -24,6 +26,7 @@ export const AccordionCSS = {
     top: "17px",
     left: "10px",
   },
+
   answerBox: {
     height: "0px",
     padding: "2rem",
@@ -35,12 +38,14 @@ export const AccordionCSS = {
     lineHeight: "2rem",
     transition: "all 0.5s ease",
   },
+
   open: {
     height: "100%",
     display: "block",
     opacity: 1,
     transition: "all 0.5s ease",
   },
+
   close: {
     height: "100%",
     display: "none",
@@ -53,6 +58,7 @@ export const AccordionCSS = {
     root: {
       width: "65vw",
     },
+
     question: {
       width: "100%",
       fontSize: "1.5rem",
@@ -64,9 +70,12 @@ export const AccordionCSS = {
     root: {
       width: "65vw",
     },
+
     question: {
       width: "100%",
       fontSize: "1.5rem",
     },
   },
 };
+
+export default AccordionCSS;

@@ -1,4 +1,4 @@
-export const SpinnerCSS = {
+const SpinnerCSS = {
   root: {
     minHeight: "var(--minHeight)",
     width: "100%",
@@ -7,3 +7,5 @@ export const SpinnerCSS = {
     alignItems: "center",
   },
 };
+
+export default SpinnerCSS;

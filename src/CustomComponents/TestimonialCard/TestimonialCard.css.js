@@ -1,4 +1,4 @@
-export const TestimonialCardCSS = {
+const TestimonialCardCSS = {
   root: {
     minHeight: "400px",
     width: "300px",
@@ -10,6 +10,7 @@ export const TestimonialCardCSS = {
     alignItems: "center",
     borderRadius: "0.5rem",
   },
+
   comment: {
     padding: "1rem",
     lineHeight: "2rem",
@@ -18,10 +19,12 @@ export const TestimonialCardCSS = {
     fontSize: "1.5rem",
     textAlign: "center",
   },
+
   image: {
     width: "50px",
     margin: "1rem",
   },
+
   name: {
     padding: "0.5rem",
     fontFamily: "Lato,sans-serif",
@@ -29,6 +32,7 @@ export const TestimonialCardCSS = {
     fontSize: "1rem",
     letterSpacing: "0.1rem",
   },
+
   websiteURL: {
     fontFamily: "Lato,sans-serif",
     fontWeight: "300",
@@ -36,3 +40,5 @@ export const TestimonialCardCSS = {
     fontSize: "0.8rem",
   },
 };
+
+export default TestimonialCardCSS;

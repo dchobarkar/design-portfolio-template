@@ -3,11 +3,12 @@ import clsx from "clsx";
 import { Link, useRouteMatch } from "react-router-dom";
 import { makeStyles } from "@material-ui/styles";
 
-import { NavLinkCSS } from "./NavLink.css";
+import NavLinkCSS from "./NavLink.css";
 
 // CSS
 const useStyles = makeStyles({ ...NavLinkCSS });
 
+// Driver component
 function NavLink({ label, to, onClick }) {
   const classes = useStyles();
 

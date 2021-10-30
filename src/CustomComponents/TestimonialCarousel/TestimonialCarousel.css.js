@@ -1,24 +1,28 @@
-export const TestimonialCarouselCSS = {
+const TestimonialCarouselCSS = {
   root: {
     display: "flex",
     flexDirection: "column",
   },
+
   slideContainer: {
     width: "90vw",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
   },
+
   arrow: {
     width: "45px",
     height: "45px",
     cursor: "pointer",
     opacity: "0.75",
     transition: "opacity 0.15s cubic-bezier(0.4, 0, 1, 1)",
+
     "&:hover": {
       opacity: "0.5",
     },
   },
+
   slide: {
     width: "80vw",
     padding: "2rem",
@@ -26,15 +30,18 @@ export const TestimonialCarouselCSS = {
     textAlign: "center",
     listStyleType: "none",
   },
+
   slideActive: {
     display: "block",
   },
+
   indicatorList: {
     marginTop: "2rem",
     display: "flex",
     justifyContent: "center",
     listStyleType: "none",
   },
+
   indicator: {
     margin: "0 0.2rem",
     display: "block",
@@ -43,16 +50,20 @@ export const TestimonialCarouselCSS = {
     cursor: "pointer",
     opacity: "0.15",
     transition: "opacity 0.15s cubic-bezier(0.4, 0, 1, 1)",
+
     "&:hover": {
       opacity: "0.5",
     },
   },
+
   indicatorActive: {
     opacity: "0.75",
+
     "&:hover": {
       opacity: "0.75",
     },
   },
+
   comment: {
     padding: "1rem",
     fontFamily: "Montserrat,sans-serif",
@@ -60,14 +71,17 @@ export const TestimonialCarouselCSS = {
     fontStlye: "italic",
     fontSize: "1.1rem",
   },
+
   image: {
     width: "50px",
   },
+
   name: {
     fontFamily: "Dosis,sans-serif",
     fontWeight: "500",
     fontSize: "0.8rem",
   },
+
   websiteURL: {
     fontFamily: "Lato,sans-serif",
     fontWeight: "300",
@@ -80,6 +94,7 @@ export const TestimonialCarouselCSS = {
     comment: {
       fontSize: "1.5rem",
     },
+
     name: {
       fontSize: "0.9rem",
     },
@@ -90,8 +105,11 @@ export const TestimonialCarouselCSS = {
     comment: {
       fontSize: "2rem",
     },
+
     name: {
       fontSize: "1rem",
     },
   },
 };
+
+export default TestimonialCarouselCSS;

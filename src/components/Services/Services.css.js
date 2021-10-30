@@ -1,4 +1,4 @@
-export const ServicesCSS = {
+const ServicesCSS = {
   root: {
     minHeight: "var(--minHeight)",
     padding: "0 30px",
@@ -7,6 +7,7 @@ export const ServicesCSS = {
     justifyContent: "center",
     alignItems: "center",
   },
+
   serviceIntro: {
     minHeight: "var(--minHeight)",
     display: "flex",
@@ -42,3 +43,5 @@ export const ServicesCSS = {
     },
   },
 };
+
+export default ServicesCSS;

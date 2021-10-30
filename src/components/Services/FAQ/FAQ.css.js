@@ -1,4 +1,4 @@
-export const FAQCSS = {
+const FAQCSS = {
   root: {
     padding: "2rem 0",
     display: "flex",
@@ -6,6 +6,7 @@ export const FAQCSS = {
     justifyContent: "center",
     alignItems: "center",
   },
+
   header: {
     width: "70vw",
     fontFamily: "Dosis,sans-serif",
@@ -28,3 +29,5 @@ export const FAQCSS = {
     },
   },
 };
+
+export default FAQCSS;

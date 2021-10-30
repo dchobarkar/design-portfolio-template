@@ -1,12 +1,13 @@
 import React from "react";
-import { makeStyles } from "@material-ui/styles";
 import { Link } from "react-router-dom";
+import { makeStyles } from "@material-ui/styles";
 
-import { BlogPostCardCSS } from "./BlogPostCard.css";
+import BlogPostCardCSS from "./BlogPostCard.css";
 
 // CSS
 const useStyles = makeStyles({ ...BlogPostCardCSS });
 
+// Driver component
 function BlogPostCard(props) {
   const classes = useStyles();
 
@@ -17,6 +18,7 @@ function BlogPostCard(props) {
 
         <div className={classes.blogDetails}>
           <img alt={props.author} src={props.authorImg} />
+
           <p>
             by {props.author} | {props.date}
           </p>

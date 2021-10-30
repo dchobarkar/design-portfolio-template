@@ -1,6 +1,6 @@
 import AuthorImg from "../../Assets/img/blogposts/author.png";
 
-export const ResourcesList = [
+const ResourcesList = [
   {
     heading: "Importance of color scheme in website",
     authorImg: AuthorImg,
@@ -56,3 +56,5 @@ export const ResourcesList = [
     link: "/resoucers/importance-of-color-scheme-in-website",
   },
 ];
+
+export default ResourcesList;

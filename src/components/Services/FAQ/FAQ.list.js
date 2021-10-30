@@ -1,4 +1,4 @@
-export const FAQList = [
+const FAQList = [
   {
     que: "What is a custom design ?",
     ans: "A custom design starts from a blank slate. Every decision is made specifically to suit your needs, from colors to fonts, layout to structure. Every single component is entirely customized for you. With a custom design, your website will be one-of-a-kind. It’s all about getting the right message across and keeping the site structure lean and efficient without unnecessary page bloat.",
@@ -28,3 +28,5 @@ export const FAQList = [
     ans: "SVG is awesome for icons! It's a vector image format with optional support for CSS, JavaScript, reusability, accessibility and a bunch more. It was made for this sort of thing.",
   },
 ];
+
+export default FAQList;

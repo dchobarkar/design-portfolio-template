@@ -1,14 +1,15 @@
 import React from "react";
-import { makeStyles } from "@material-ui/styles";
 import clsx from "clsx";
+import { makeStyles } from "@material-ui/styles";
 
 import { ReactComponent as DoubleLeftIcon } from "../../Assets/svg/DoubleLeft.svg";
 import { ReactComponent as DoubleRightIcon } from "../../Assets/svg/DoubleRight.svg";
-import { TestimonialCarouselCSS } from "./TestimonialCarousel.css";
+import TestimonialCarouselCSS from "./TestimonialCarousel.css";
 
 // CSS
 const useStyles = makeStyles({ ...TestimonialCarouselCSS });
 
+// Component to show the slide indicator
 function Indicator(props) {
   const classes = useStyles();
 
@@ -26,6 +27,7 @@ function Indicator(props) {
   );
 }
 
+// Component to show slide
 function Slide(props) {
   const classes = useStyles();
 
@@ -55,15 +57,18 @@ function Slide(props) {
   );
 }
 
+// Driver component
 function TestimonialCarousel(props) {
   const classes = useStyles();
 
+  // Flag for active slide
   const [activeIndex, setActiveIndex] = React.useState(0);
 
   const goToSlide = (index) => {
     setActiveIndex(index);
   };
 
+  // Function to go next slide
   const goToPreSlide = (e) => {
     e.preventDefault();
 
@@ -80,6 +85,7 @@ function TestimonialCarousel(props) {
     setActiveIndex(index);
   };
 
+  // Function to go previous slide
   const goToNextSlide = (e) => {
     e.preventDefault();
 

@@ -1,11 +1,12 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
-import { TestimonialCardCSS } from "./TestimonialCard.css";
+import TestimonialCardCSS from "./TestimonialCard.css";
 
 // CSS
 const useStyles = makeStyles({ ...TestimonialCardCSS });
 
+// Driver component
 function TestimonialCard(props) {
   const classes = useStyles();
 

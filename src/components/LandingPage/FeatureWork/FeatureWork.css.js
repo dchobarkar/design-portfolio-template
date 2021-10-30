@@ -1,4 +1,4 @@
-export const FeatureWorkCSS = {
+const FeatureWorkCSS = {
   root: {
     minHeight: "var(--minHeight)",
     padding: "20px 30px",
@@ -22,3 +22,5 @@ export const FeatureWorkCSS = {
     },
   },
 };
+
+export default FeatureWorkCSS;

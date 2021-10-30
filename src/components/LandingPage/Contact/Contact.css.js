@@ -1,4 +1,4 @@
-export const ContactCSS = {
+const ContactCSS = {
   root: {
     minHeight: "var(--minHeight)",
     padding: "20px 30px",
@@ -7,6 +7,7 @@ export const ContactCSS = {
     justifyContent: "center",
     alignItems: "center",
   },
+
   header: {
     width: "100%",
     padding: "20px 0",
@@ -16,6 +17,7 @@ export const ContactCSS = {
     fontSize: "2rem",
     textAlign: "center",
   },
+
   formContainer: {
     width: "100%",
     padding: "2rem",
@@ -68,10 +70,12 @@ export const ContactCSS = {
       padding: "0px 60px",
       flexDirection: "row",
     },
+
     header: {
       width: "40vw",
       fontSize: "3rem",
     },
+
     formContainer: {
       width: "50vw",
     },
@@ -84,6 +88,7 @@ export const ContactCSS = {
       flexDirection: "row",
       justifyContent: "space-between",
     },
+
     header: {
       width: "40vw",
       fontSize: "4rem",
@@ -95,3 +100,5 @@ export const ContactCSS = {
     },
   },
 };
+
+export default ContactCSS;

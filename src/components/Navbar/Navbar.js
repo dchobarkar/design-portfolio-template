@@ -7,11 +7,12 @@ import { makeStyles } from "@material-ui/styles";
 import { ReactComponent as CloseIcon } from "../../Assets/svg/Close.svg";
 import { ReactComponent as MenuIcon } from "../../Assets/svg/Menu.svg";
 import NavLink from "./NavLink/NavLink";
-import { NavbarCSS } from "./Navbar.css";
+import NavbarCSS from "./Navbar.css";
 
 // CSS
 const useStyle = makeStyles({ ...NavbarCSS });
 
+// Driver component
 function Navbar(props) {
   const classes = useStyle();
 

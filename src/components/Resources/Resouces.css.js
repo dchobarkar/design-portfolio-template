@@ -1,4 +1,4 @@
-export const ResourcesCSS = {
+const ResourcesCSS = {
   root: {
     minHeight: "var(--minHeight)",
     padding: "0 30px",
@@ -22,3 +22,5 @@ export const ResourcesCSS = {
     },
   },
 };
+
+export default ResourcesCSS;

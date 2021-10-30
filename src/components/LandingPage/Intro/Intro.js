@@ -1,11 +1,12 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
-import { IntroCSS } from "./Intro.css";
+import IntroCSS from "./Intro.css";
 
 // CSS
 const useStyles = makeStyles({ ...IntroCSS });
 
+// Driver component
 function Intro(props) {
   const classes = useStyles();
 

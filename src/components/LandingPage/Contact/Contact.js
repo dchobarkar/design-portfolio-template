@@ -1,11 +1,12 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
-import { ContactCSS } from "./Contact.css";
+import ContactCSS from "./Contact.css";
 
 // CSS
 const useStyles = makeStyles({ ...ContactCSS });
 
+// Driver component
 function Contact(props) {
   const classes = useStyles();
 

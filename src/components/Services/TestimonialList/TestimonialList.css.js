@@ -1,4 +1,4 @@
-export const TestimonialListCSS = {
+const TestimonialListCSS = {
   root: {
     padding: "2rem 0",
     display: "flex",
@@ -6,6 +6,7 @@ export const TestimonialListCSS = {
     justifyContent: "center",
     alignItems: "center",
   },
+
   header: {
     padding: "2rem",
     fontFamily: "Dosis,sans-serif",
@@ -13,6 +14,7 @@ export const TestimonialListCSS = {
     fontSize: "2rem",
     textAlign: "center",
   },
+
   testimonialList: {
     padding: "1rem",
     display: "flex",
@@ -21,3 +23,5 @@ export const TestimonialListCSS = {
     alignItems: "center",
   },
 };
+
+export default TestimonialListCSS;

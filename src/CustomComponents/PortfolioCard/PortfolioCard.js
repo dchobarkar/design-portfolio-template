@@ -1,11 +1,12 @@
 import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
-import { PortfolioCardCSS } from "./PortfolioCard.css";
+import PortfolioCardCSS from "./PortfolioCard.css";
 
 // CSS
 const useStyles = makeStyles({ ...PortfolioCardCSS });
 
+// Driver component
 function PortfolioCard(props) {
   const classes = useStyles();
 

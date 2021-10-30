@@ -1,4 +1,4 @@
-export const ServicesList = [
+const ServicesList = [
   {
     title: "DESIGN + DEVELOPMENT",
     description:
@@ -15,3 +15,5 @@ export const ServicesList = [
       "Improve and promote your website in order to increase the number of visitors it receives.",
   },
 ];
+
+export default ServicesList;

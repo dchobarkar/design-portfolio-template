@@ -1,4 +1,4 @@
-export const ServicesCSS = {
+const ServicesCSS = {
   root: {
     minHeight: "var(--minHeight)",
     padding: "20px 30px",
@@ -7,12 +7,14 @@ export const ServicesCSS = {
     justifyContent: "center",
     alignItems: "center",
   },
+
   serviceCardContainer: {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
     alignItems: "center",
   },
+
   serviceLink: {
     height: "50px",
     width: "80%",
@@ -39,6 +41,7 @@ export const ServicesCSS = {
     root: {
       padding: "0px 60px",
     },
+
     serviceLink: {
       width: "40%",
       minWidth: "200px",
@@ -50,9 +53,12 @@ export const ServicesCSS = {
     root: {
       padding: "0px 120px",
     },
+
     serviceLink: {
       width: "30%",
       maxWidth: "300px",
     },
   },
 };
+
+export default ServicesCSS;

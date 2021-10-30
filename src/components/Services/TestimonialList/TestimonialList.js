@@ -2,12 +2,13 @@ import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
 import TestimonialCard from "../../../CustomComponents/TestimonialCard/TestimonialCard";
-import { TestimonialListList } from "./TestimonialList.list";
-import { TestimonialListCSS } from "./TestimonialList.css";
+import TestimonialListList from "./TestimonialList.list";
+import TestimonialListCSS from "./TestimonialList.css";
 
 // CSS
 const useStyles = makeStyles({ ...TestimonialListCSS });
 
+// Driver component
 function TestimonialList(props) {
   const classes = useStyles();
 

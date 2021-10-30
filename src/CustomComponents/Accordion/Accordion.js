@@ -1,14 +1,15 @@
 import React from "react";
-import { makeStyles } from "@material-ui/styles";
 import clsx from "clsx";
+import { makeStyles } from "@material-ui/styles";
 
 import { ReactComponent as DownArrowIcon } from "../../Assets/svg/DownArrow.svg";
 import { ReactComponent as UpArrowIcon } from "../../Assets/svg/UpArrow.svg";
-import { AccordionCSS } from "./Accordion.css";
+import AccordionCSS from "./Accordion.css";
 
 // CSS
 const useStyles = makeStyles({ ...AccordionCSS });
 
+// Driver component
 function Accordion(props) {
   const classes = useStyles();
 
@@ -19,6 +20,7 @@ function Accordion(props) {
     <div className={classes.root}>
       <div className={classes.question} onClick={() => setIsOpen(!isOpen)}>
         <p> {props.que}</p>
+
         {isOpen ? (
           <UpArrowIcon className={classes.icon} />
         ) : (

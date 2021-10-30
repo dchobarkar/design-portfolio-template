@@ -1,4 +1,4 @@
-export const FooterCSS = {
+const FooterCSS = {
   root: {
     padding: "1rem 30px",
     fontFamily: "Montserrat,sans-serif",
@@ -30,3 +30,5 @@ export const FooterCSS = {
     },
   },
 };
+
+export default FooterCSS;

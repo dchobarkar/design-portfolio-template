@@ -1,4 +1,4 @@
-export const IntroCSS = {
+const IntroCSS = {
   root: {
     height: "var(--minHeight)",
     padding: "0px 30px",
@@ -6,6 +6,7 @@ export const IntroCSS = {
     justifyContent: "center",
     alignItems: "center",
   },
+
   header: {
     fontFamily: "'Dosis',sans-serif",
     fontWeight: "700",
@@ -35,3 +36,5 @@ export const IntroCSS = {
     },
   },
 };
+
+export default IntroCSS;
