@@ -1,18 +1,18 @@
 const ServicesList = [
   {
-    title: "DESIGN + DEVELOPMENT",
+    title: "CUSTOM WEBSITE DEVELOPMENT",
     description:
-      "Clean & modern designs - optimized for performance, search engines, and converting users to consumers.",
+      "Bring your ideas and vision to life through layout, color and typography in a custom website you can confidently show off.",
   },
   {
-    title: "E-COMMERCE",
+    title: "E-COMMERCE SOLUTION",
     description:
-      "Integration of eCommerce platforms, payment gateways, custom products templates, and more.",
+      "Promote your sales through feature filled, customisable online storefront and shopping cart that will be directly integrated into your website.",
   },
   {
     title: "SEO ( SEARCH ENGINE OPTIMIZATION )",
     description:
-      "Improve and promote your website in order to increase the number of visitors it receives.",
+      "Increase your sales through expanding your number of visites on your website.",
   },
 ];
 
