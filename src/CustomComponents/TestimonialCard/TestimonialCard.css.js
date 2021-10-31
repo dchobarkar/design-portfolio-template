@@ -14,7 +14,7 @@ const TestimonialCardCSS = {
   comment: {
     padding: "1rem",
     lineHeight: "2rem",
-    fontFamily: "Dosis,sans-serif",
+    fontFamily: "Montserrat,sans-serif",
     fontWeight: "500",
     fontSize: "1.5rem",
     textAlign: "center",

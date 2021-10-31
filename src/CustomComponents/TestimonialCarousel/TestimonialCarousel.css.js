@@ -68,7 +68,7 @@ const TestimonialCarouselCSS = {
     padding: "1rem",
     fontFamily: "Montserrat,sans-serif",
     fontWeight: "600",
-    fontStlye: "italic",
+    fontStyle: "italic",
     fontSize: "1.1rem",
   },
 

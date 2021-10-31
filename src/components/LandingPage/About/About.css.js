@@ -17,7 +17,7 @@ const AboutCSS = {
   aboutIntro: {
     padding: "2rem 0",
     fontFamily: "'Lato',sans-serif",
-    fontWeight: "400",
+    fontWeight: "500",
     fontStyle: "italic",
     fontSize: "1.2rem",
     lineHeight: "1.5rem",

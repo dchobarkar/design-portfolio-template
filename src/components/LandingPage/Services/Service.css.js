@@ -22,7 +22,7 @@ const ServicesCSS = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    fontFamily: "'Lato',sans-serif",
+    fontFamily: "'Montserrat',sans-serif",
     fontWeight: "400",
     fontSize: "1.5rem",
     textAlign: "center",

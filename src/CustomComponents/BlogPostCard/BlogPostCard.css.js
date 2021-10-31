@@ -44,7 +44,7 @@ const BlogPostCardCSS = {
   },
 
   link: {
-    fontFamily: "Lato,sans-serif",
+    fontFamily: "Montserrat,sans-serif",
     fontWeight: "400",
     fontStyle: "normal",
     fontSize: "0.8rem",
