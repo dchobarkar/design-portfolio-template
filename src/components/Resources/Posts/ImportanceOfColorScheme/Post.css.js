@@ -11,7 +11,7 @@ const PostCSS = {
     paddingBottom: "1rem",
     fontFamily: "Dosis,sans-serif",
     fontWeight: "500",
-    fontSize: "1.5rem",
+    fontSize: "var(--mobView-1)",
     color: "#F86449",
     textAlign: "Center",
   },
@@ -34,7 +34,7 @@ const PostCSS = {
   author: {
     fontFamily: "Lato,sans-serif",
     fontWeight: "300",
-    fontSize: "0.8rem",
+    fontSize: "var(--mobView-5)",
     color: "var(--text-black)",
   },
 
@@ -42,7 +42,8 @@ const PostCSS = {
     paddingTop: "1rem",
     fontFamily: "Lato,sans-serif",
     fontWeight: "500",
-    fontSize: "1.2rem",
+    fontSize: "var(--mobView-3)",
+    lineHeight: "1.5rem",
   },
 
   /* Tablet view */
@@ -52,7 +53,7 @@ const PostCSS = {
     },
 
     postHeader: {
-      fontSize: "2rem",
+      fontSize: "var(--tabView-1)",
     },
 
     authorContainer: {
@@ -65,13 +66,13 @@ const PostCSS = {
     },
 
     author: {
-      fontSize: "1rem",
+      fontSize: "var(--tabView-5)",
     },
 
     content: {
       width: "80%",
       paddingTop: "2rem",
-      fontSize: "1.5rem",
+      fontSize: "var(--tabView-3)",
     },
   },
 
@@ -82,7 +83,7 @@ const PostCSS = {
     },
 
     postHeader: {
-      fontSize: "2rem",
+      fontSize: "var(--desView-1)",
     },
 
     authorContainer: {
@@ -95,13 +96,13 @@ const PostCSS = {
     },
 
     author: {
-      fontSize: "1rem",
+      fontSize: "var(--desView-5)",
     },
 
     content: {
       width: "60%",
       paddingTop: "3rem",
-      fontSize: "1.5rem",
+      fontSize: "var(--desView-3)",
     },
   },
 };

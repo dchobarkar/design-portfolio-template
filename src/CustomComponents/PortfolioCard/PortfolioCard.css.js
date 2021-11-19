@@ -15,13 +15,33 @@ const PortfolioCardCSS = {
     padding: "0.5rem",
     fontFamily: "Dosis,sans-serif",
     fontWeight: "500",
-    fontSize: "1.2rem",
+    fontSize: "var(--mobView-3)",
   },
 
   services: {
     fontFamily: "Lato,sans-serif",
     fontWeight: "300",
-    fontSize: "0.7rem",
+    fontSize: "var(--mobView-5)",
+  },
+
+  /* Tablet view */
+  "@media only screen and (min-width: 401px) and (max-width: 960px)": {
+    name: {
+      fontSize: "var(--tabView-3)",
+    },
+
+    services: "var(--tabView-5)",
+  },
+
+  /* Desktop view */
+  "@media only screen and (min-width: 961px)": {
+    name: {
+      fontSize: "var(--desView-3)",
+    },
+
+    services: {
+      fontSize: "var(--desView-5)",
+    },
   },
 };
 

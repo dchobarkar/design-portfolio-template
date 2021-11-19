@@ -10,7 +10,7 @@ const AccordionCSS = {
     lineHeight: "2rem",
     fontFamily: "Lato,sans-serif",
     fontWeight: "400",
-    fontSize: "1.25rem",
+    fontSize: "var(--mobView-4)",
     textAlign: "left",
     transition: "all 0.5s ease",
 
@@ -34,7 +34,7 @@ const AccordionCSS = {
     opacity: 0,
     fontFamily: "Lato,sans-serif",
     fontWeight: "300",
-    fontSize: "1.1rem",
+    fontSize: "var(--mobView-5)",
     lineHeight: "2rem",
     transition: "all 0.5s ease",
   },
@@ -61,7 +61,11 @@ const AccordionCSS = {
 
     question: {
       width: "100%",
-      fontSize: "1.5rem",
+      fontSize: "var(--tabView-4)",
+    },
+
+    answerBox: {
+      fontSize: "var(--tabView-5)",
     },
   },
 
@@ -73,7 +77,11 @@ const AccordionCSS = {
 
     question: {
       width: "100%",
-      fontSize: "1.5rem",
+      fontSize: "var(--desView-4)",
+    },
+
+    answerBox: {
+      fontSize: "var(--desView-5)",
     },
   },
 };

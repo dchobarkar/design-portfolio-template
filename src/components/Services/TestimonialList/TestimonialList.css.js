@@ -11,7 +11,7 @@ const TestimonialListCSS = {
     padding: "2rem",
     fontFamily: "Dosis,sans-serif",
     fontWeight: "400",
-    fontSize: "2rem",
+    fontSize: "var(--mobView-1)",
     textAlign: "center",
   },
 
@@ -21,6 +21,18 @@ const TestimonialListCSS = {
     flexWrap: "wrap",
     justifyContent: "center",
     alignItems: "center",
+  },
+
+  /* Tablet view */
+  "@media only screen and (min-width: 401px) and (max-width: 960px)": {
+    header: {
+      fontSize: "var(--tabView-1)",
+    },
+  },
+
+  /* Desktop view */
+  "@media only screen and (min-width: 961px)": {
+    fontSize: "var(--desView-1)",
   },
 };
 

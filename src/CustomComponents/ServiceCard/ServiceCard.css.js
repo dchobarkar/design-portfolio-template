@@ -24,7 +24,7 @@ const ServiceCardCSS = {
     padding: "1rem",
     fontFamily: "Dosis,sans-serif",
     fontWeight: "500",
-    fontSize: "1.1rem",
+    fontSize: "var(--mobView-2)",
     textAlign: "center",
     transition: "all ease-in 100ms",
   },
@@ -32,7 +32,7 @@ const ServiceCardCSS = {
   description: {
     fontFamily: "Lato,sans-serif",
     fontWeight: "300",
-    fontSize: "0.8rem",
+    fontSize: "var(--mobView-4)",
     textAlign: "justify",
   },
 
@@ -44,7 +44,11 @@ const ServiceCardCSS = {
     },
 
     title: {
-      fontSize: "1.3rem",
+      fontSize: "var(--tabView-2)",
+    },
+
+    description: {
+      fontSize: "var(--tabView-4)",
     },
   },
 
@@ -56,7 +60,11 @@ const ServiceCardCSS = {
     },
 
     title: {
-      fontSize: "1.5rem",
+      fontSize: "var(--desView-2)",
+    },
+
+    description: {
+      fontSize: "var(--desView-4)",
     },
   },
 };

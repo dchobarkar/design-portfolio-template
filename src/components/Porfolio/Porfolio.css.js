@@ -14,7 +14,7 @@ const PortfolioCSS = {
     padding: "3rem 0",
     fontFamily: "Dosis,sans-serif",
     fontWeight: "400",
-    fontSize: "1.5rem",
+    fontSize: "var(--mobView-1)",
     textAlign: "center",
   },
 
@@ -32,7 +32,7 @@ const PortfolioCSS = {
     },
 
     header: {
-      fontSize: "2rem",
+      fontSize: "var(--tabView-1)",
     },
   },
 
@@ -43,7 +43,7 @@ const PortfolioCSS = {
     },
 
     header: {
-      fontSize: "2rem",
+      fontSize: "var(--desView-1)",
     },
   },
 };

@@ -69,7 +69,7 @@ const TestimonialCarouselCSS = {
     fontFamily: "Montserrat,sans-serif",
     fontWeight: "600",
     fontStyle: "italic",
-    fontSize: "1.1rem",
+    fontSize: "var(--mobView-2)",
   },
 
   image: {
@@ -79,35 +79,43 @@ const TestimonialCarouselCSS = {
   name: {
     fontFamily: "Dosis,sans-serif",
     fontWeight: "500",
-    fontSize: "0.8rem",
+    fontSize: "var(--mobView-4)",
   },
 
   websiteURL: {
     fontFamily: "Lato,sans-serif",
     fontWeight: "300",
     fontStyle: "italic",
-    fontSize: "0.8rem",
+    fontSize: "var(--mobView-4)",
   },
 
   /* Tablet view */
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
     comment: {
-      fontSize: "1.5rem",
+      fontSize: "var(--tabView-2)",
     },
 
     name: {
-      fontSize: "0.9rem",
+      fontSize: "var(--tabView-4)",
+    },
+
+    websiteURL: {
+      fontSize: "var(--tabView-4)",
     },
   },
 
   /* Desktop view */
   "@media only screen and (min-width: 961px)": {
     comment: {
-      fontSize: "2rem",
+      fontSize: "var(--desView-2)",
     },
 
     name: {
-      fontSize: "1rem",
+      fontSize: "var(--desView-4)",
+    },
+
+    websiteURL: {
+      fontSize: "var(--desView-4)",
     },
   },
 };

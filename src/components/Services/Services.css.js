@@ -15,7 +15,7 @@ const ServicesCSS = {
     alignItems: "center",
     fontFamily: "Dosis,sans-serif",
     fontWeight: "400",
-    fontSize: "3rem",
+    fontSize: "var(--mobView-1)",
     letterSpacing: "3px",
     textAlign: "center",
   },
@@ -27,7 +27,7 @@ const ServicesCSS = {
     },
 
     serviceIntro: {
-      fontSize: "4rem",
+      fontSize: "var(--tabView-1)",
     },
   },
 
@@ -39,7 +39,7 @@ const ServicesCSS = {
 
     serviceIntro: {
       minHeight: "60vh",
-      fontSize: "5rem",
+      fontSize: "var(--desView-1)",
     },
   },
 };

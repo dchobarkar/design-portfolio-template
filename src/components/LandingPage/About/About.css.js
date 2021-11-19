@@ -19,7 +19,7 @@ const AboutCSS = {
     fontFamily: "'Lato',sans-serif",
     fontWeight: "500",
     fontStyle: "italic",
-    fontSize: "1.2rem",
+    fontSize: "var(--mobView-4)",
     lineHeight: "1.5rem",
     textAlign: "justify",
   },
@@ -35,7 +35,7 @@ const AboutCSS = {
     },
 
     aboutIntro: {
-      fontSize: "1.3rem",
+      fontSize: "var(--tabView-4)",
     },
   },
 
@@ -52,7 +52,7 @@ const AboutCSS = {
     },
 
     aboutIntro: {
-      fontSize: "1.5rem",
+      fontSize: "var(--desView-4)",
       lineHeight: "1.7rem",
     },
   },

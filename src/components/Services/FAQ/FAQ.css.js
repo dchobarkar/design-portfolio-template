@@ -11,7 +11,7 @@ const FAQCSS = {
     width: "70vw",
     fontFamily: "Dosis,sans-serif",
     fontWeight: "400",
-    fontSize: "2rem",
+    fontSize: "var(--mobView-1)",
     textAlign: "center",
   },
 
@@ -19,6 +19,7 @@ const FAQCSS = {
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
     header: {
       padding: "1.5rem",
+      fontSize: "var(--tabView-1)",
     },
   },
 
@@ -26,6 +27,7 @@ const FAQCSS = {
   "@media only screen and (min-width: 961px)": {
     header: {
       padding: "1.5rem",
+      fontSize: "var(--desView-1)",
     },
   },
 };

@@ -24,7 +24,7 @@ const ServicesCSS = {
     alignItems: "center",
     fontFamily: "'Montserrat',sans-serif",
     fontWeight: "400",
-    fontSize: "1.5rem",
+    fontSize: "var(--mobView-3)",
     textAlign: "center",
     textDecoration: "none",
     borderRadius: "1rem",
@@ -45,6 +45,7 @@ const ServicesCSS = {
     serviceLink: {
       width: "40%",
       minWidth: "200px",
+      fontSize: "var(--tabView-3)",
     },
   },
 
@@ -57,6 +58,7 @@ const ServicesCSS = {
     serviceLink: {
       width: "30%",
       maxWidth: "300px",
+      fontSize: "var(--desView-3)",
     },
   },
 };

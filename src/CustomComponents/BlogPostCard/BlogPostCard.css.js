@@ -17,7 +17,7 @@ const BlogPostCardCSS = {
     paddingBottom: "0.5rem",
     fontFamily: "Dosis,sans-serif",
     fontWeight: "500",
-    fontSize: "1.5rem",
+    fontSize: "var(--mobView-2)",
   },
 
   blogDetails: {
@@ -27,6 +27,7 @@ const BlogPostCardCSS = {
     alignItems: "center",
     fontFamily: "Lato,sans-serif",
     fontWeight: "300",
+    fontSize: "var(--mobView-5)",
     fontStyle: "normal",
 
     "& img": {
@@ -40,6 +41,7 @@ const BlogPostCardCSS = {
     padding: "0.5rem 0",
     fontFamily: "Lato,sans-serif",
     fontWeight: "400",
+    fontSize: "var(--mobView-4)",
     fontStyle: "normal",
   },
 
@@ -47,7 +49,7 @@ const BlogPostCardCSS = {
     fontFamily: "Montserrat,sans-serif",
     fontWeight: "400",
     fontStyle: "normal",
-    fontSize: "0.8rem",
+    fontSize: "var(--mobView-5)",
     textDecoration: "none",
   },
 
@@ -66,7 +68,19 @@ const BlogPostCardCSS = {
     },
 
     header: {
-      fontSize: "2rem",
+      fontSize: "var(--tabView-2)",
+    },
+
+    blogDetails: {
+      fontSize: "var(--tabView-5)",
+    },
+
+    abstract: {
+      fontSize: "var(--tabView-4)",
+    },
+
+    link: {
+      fontSize: "var(--tabView-5)",
     },
   },
 
@@ -81,7 +95,19 @@ const BlogPostCardCSS = {
     },
 
     header: {
-      fontSize: "2.5rem",
+      fontSize: "var(--desView-2)",
+    },
+
+    blogDetails: {
+      fontSize: "var(--desView-5)",
+    },
+
+    abstract: {
+      fontSize: "var(--desView-4)",
+    },
+
+    link: {
+      fontSize: "var(--desView-5)",
     },
   },
 };

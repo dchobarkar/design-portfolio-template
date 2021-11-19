@@ -14,12 +14,12 @@ const NavbarCSS = {
 
   brand: {
     fontWeight: "500",
-    fontSize: "1.5rem",
+    fontSize: "var(--mobView-2)",
   },
 
   menu: {
     width: "100%",
-    height: "100vh",
+    height: "80vh",
     position: "absolute",
     top: "-100%",
     left: "0",
@@ -27,8 +27,6 @@ const NavbarCSS = {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
-    fontWeight: "400",
-    fontSize: "1rem",
     opacity: "0",
     transition: "all 0.7s ease",
   },
@@ -54,6 +52,10 @@ const NavbarCSS = {
     root: {
       padding: "0px 60px",
     },
+
+    brand: {
+      fontSize: "var(--tabView-2)",
+    },
   },
 
   /* Desktop view */
@@ -64,7 +66,7 @@ const NavbarCSS = {
     },
 
     brand: {
-      fontSize: "2rem",
+      fontSize: "var(--desView-2)",
     },
 
     menu: {

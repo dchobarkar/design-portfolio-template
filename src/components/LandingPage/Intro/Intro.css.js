@@ -10,7 +10,7 @@ const IntroCSS = {
   header: {
     fontFamily: "'Dosis',sans-serif",
     fontWeight: "700",
-    fontSize: "2rem",
+    fontSize: "var(--mobView-1)",
     textAlign: "center",
   },
 
@@ -21,7 +21,7 @@ const IntroCSS = {
     },
 
     header: {
-      fontSize: "3rem",
+      fontSize: "var(--tabView-1)",
     },
   },
 
@@ -32,7 +32,7 @@ const IntroCSS = {
     },
 
     header: {
-      fontSize: "5rem",
+      fontSize: "var(--desView-1)",
     },
   },
 };

@@ -3,6 +3,28 @@
   --text-white: "#FEFEFF";
 
   --minHeight: 90vh;
+
+  /* Font size */
+  /* Mobile view */
+  --mobView-1:2rem;
+  --mobView-2:1.5rem;
+  --mobView-3:1.2rem;
+  --mobView-4:1rem;
+  --mobView-5:0.7rem;
+
+  /* Tablet view */
+  --tabView-1:3rem;
+  --tabView-2:1.5rem;
+  --tabView-3:1.2rem;
+  --tabView-4:1rem;
+  --tabView-5:0.7rem;
+
+  /* Desktop view*/
+  --desView-1:5rem;
+  --desView-2:1.5rem;
+  --desView-3:1.2rem;
+  --desView-4:1rem;
+  --desView-5:0.7rem;
 }
 
 * {

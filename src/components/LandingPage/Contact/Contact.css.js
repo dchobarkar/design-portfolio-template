@@ -14,7 +14,7 @@ const ContactCSS = {
     fontFamily: "Lato,sans-serif",
     fontWeight: "600",
     fontStyle: "italic",
-    fontSize: "2rem",
+    fontSize: "var(--mobView-1)",
     textAlign: "center",
   },
 
@@ -35,7 +35,7 @@ const ContactCSS = {
     "& input": {
       width: "100%",
       padding: "7px",
-      fontSize: "1rem",
+      fontSize: "var(--mobView-4)",
       border: "none",
       borderRadius: "0.5rem",
     },
@@ -44,7 +44,7 @@ const ContactCSS = {
       width: "100%",
       minHeight: "13rem",
       padding: "7px",
-      fontSize: "1rem",
+      fontSize: "var(--mobView-4)",
       border: "none",
       borderRadius: "0.5rem",
     },
@@ -52,6 +52,7 @@ const ContactCSS = {
     "& label": {
       fontFamily: "Montserrat,sans-serif",
       fontWeight: "500",
+      fontSize: "var(--mobView-4)",
       marginBottom: "1rem",
     },
 
@@ -59,7 +60,7 @@ const ContactCSS = {
       padding: "0.5rem",
       fontFamily: "Montserrat,sans-serif",
       fontWeight: "600",
-      fontSize: "1.3rem",
+      fontSize: "var(--mobView-3)",
       borderRadius: "0.5rem",
     },
   },
@@ -73,11 +74,29 @@ const ContactCSS = {
 
     header: {
       width: "40vw",
-      fontSize: "3rem",
+      fontSize: "var(--tabView-1)",
     },
 
     formContainer: {
       width: "50vw",
+    },
+
+    formRow: {
+      "& input": {
+        fontSize: "var(--tabView-4)",
+      },
+
+      "& textarea": {
+        fontSize: "var(--tabView-4)",
+      },
+
+      "& label": {
+        fontSize: "var(--tabView-4)",
+      },
+
+      "& button": {
+        fontSize: "var(--tabView-3)",
+      },
     },
   },
 
@@ -91,12 +110,30 @@ const ContactCSS = {
 
     header: {
       width: "40vw",
-      fontSize: "4rem",
+      fontSize: "var(--desView-1)",
     },
 
     formContainer: {
       width: "40vw",
       padding: "2.5rem 3rem",
+    },
+
+    formRow: {
+      "& input": {
+        fontSize: "var(--desView-4)",
+      },
+
+      "& textarea": {
+        fontSize: "var(--desView-4)",
+      },
+
+      "& label": {
+        fontSize: "var(--desView-4)",
+      },
+
+      "& button": {
+        fontSize: "var(--desView-3)",
+      },
     },
   },
 };
