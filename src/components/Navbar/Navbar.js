@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import clsx from "clsx";
 import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
@@ -8,13 +8,39 @@ import { ReactComponent as CloseIcon } from "../../Assets/svg/Close.svg";
 import { ReactComponent as MenuIcon } from "../../Assets/svg/Menu.svg";
 import NavLink from "./NavLink/NavLink";
 import NavbarCSS from "./Navbar.css";
+import { navbarColor } from "../../util/color.util";
 
 // CSS
-const useStyle = makeStyles({ ...NavbarCSS });
+const useStyle = makeStyles({
+  ...NavbarCSS,
+  root: {
+    ...NavbarCSS.root,
+    backgroundColor: ({ backgroundColor }) => backgroundColor,
+
+    "& a:link,a:visited": {
+      ...NavbarCSS.root["& a:link,a:visited"],
+      color: ({ color }) => color,
+    },
+  },
+});
 
 // Driver component
 function Navbar(props) {
-  const classes = useStyle();
+  const [color, setColor] = useState("");
+  const [backgroundColor, setBackgroundColor] = useState("");
+
+  const cssProps = {
+    color: color,
+    backgroundColor: backgroundColor,
+  };
+  const classes = useStyle(cssProps);
+
+  // Function to change the color and background color of navbar according to url
+  useEffect(() => {
+    const [color, backgroundColor] = navbarColor(window.location.pathname);
+    setColor(color);
+    setBackgroundColor(backgroundColor);
+  }, [window.location.pathname]);
 
   // Flag to handle navbar state (Mobile view only)
   const [isOpen, setIsOpen] = React.useState(false);

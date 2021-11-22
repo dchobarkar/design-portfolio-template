@@ -29,6 +29,8 @@ const ServicesCSS = {
     textDecoration: "none",
     borderRadius: "1rem",
     transition: "all 0.5s ease",
+    color: "var(--text-white)",
+    border: "1px solid var(--text-white)",
 
     "&:hover": {
       transform: "scale(1.1)",

@@ -1,6 +1,7 @@
 :root {
+  /* Color */
   --text-black: "#212020";
-  --text-white: "#FEFEFF";
+  --text-white: #FEFEFF;
 
   --minHeight: 90vh;
 

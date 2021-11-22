@@ -13,6 +13,7 @@ const TestimonialListCSS = {
     fontWeight: "400",
     fontSize: "var(--mobView-1)",
     textAlign: "center",
+    color: "var(--text-black)",
   },
 
   testimonialList: {
@@ -32,7 +33,9 @@ const TestimonialListCSS = {
 
   /* Desktop view */
   "@media only screen and (min-width: 961px)": {
-    fontSize: "var(--desView-1)",
+    header: {
+      fontSize: "var(--desView-1)",
+    },
   },
 };
 

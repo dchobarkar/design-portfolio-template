@@ -5,6 +5,7 @@ const PostCSS = {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#E6EFED",
   },
 
   postHeader: {
@@ -44,6 +45,7 @@ const PostCSS = {
     fontWeight: "500",
     fontSize: "var(--mobView-3)",
     lineHeight: "1.5rem",
+    color: "var(--text-black)",
   },
 
   /* Tablet view */

@@ -12,6 +12,7 @@ const IntroCSS = {
     fontWeight: "700",
     fontSize: "var(--mobView-1)",
     textAlign: "center",
+    color: "#96FECB",
   },
 
   /* Tablet view */

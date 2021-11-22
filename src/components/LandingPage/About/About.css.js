@@ -22,6 +22,7 @@ const AboutCSS = {
     fontSize: "var(--mobView-4)",
     lineHeight: "1.5rem",
     textAlign: "justify",
+    color: "var(--text-white)",
   },
 
   /* Tablet view */

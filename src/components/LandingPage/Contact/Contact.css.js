@@ -6,6 +6,7 @@ const ContactCSS = {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#E6EFED",
   },
 
   header: {
@@ -16,12 +17,14 @@ const ContactCSS = {
     fontStyle: "italic",
     fontSize: "var(--mobView-1)",
     textAlign: "center",
+    color: "#1544C0",
   },
 
   formContainer: {
     width: "100%",
     padding: "2rem",
     borderRadius: "1rem",
+    backgroundColor: "#F1F4F4",
   },
 
   formRow: {
@@ -31,13 +34,16 @@ const ContactCSS = {
     justifyContent: "flex-start",
     fontStyle: "Montserrat",
     fontWeight: "500",
+    color: "var(--text-black)",
 
     "& input": {
       width: "100%",
       padding: "7px",
       fontSize: "var(--mobView-4)",
       border: "none",
+      backgroundColor: "var(--text-white)",
       borderRadius: "0.5rem",
+      color: "var(--text-black)",
     },
 
     "& textarea": {
@@ -46,7 +52,9 @@ const ContactCSS = {
       padding: "7px",
       fontSize: "var(--mobView-4)",
       border: "none",
+      backgroundColor: "var(--text-white)",
       borderRadius: "0.5rem",
+      color: "var(--text-black)",
     },
 
     "& label": {
@@ -62,6 +70,9 @@ const ContactCSS = {
       fontWeight: "600",
       fontSize: "var(--mobView-3)",
       borderRadius: "0.5rem",
+      backgroundColor: "var(--text-white)",
+      color: "var(--text-black)",
+      border: "none",
     },
   },
 

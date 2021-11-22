@@ -18,6 +18,7 @@ const BlogPostCardCSS = {
     fontFamily: "Dosis,sans-serif",
     fontWeight: "500",
     fontSize: "var(--mobView-2)",
+    color: "var(--text-black)",
   },
 
   blogDetails: {
@@ -29,6 +30,7 @@ const BlogPostCardCSS = {
     fontWeight: "300",
     fontSize: "var(--mobView-5)",
     fontStyle: "normal",
+    color: "var(--text-black)",
 
     "& img": {
       width: "4rem",
@@ -43,6 +45,7 @@ const BlogPostCardCSS = {
     fontWeight: "400",
     fontSize: "var(--mobView-4)",
     fontStyle: "normal",
+    color: "var(--text-black)",
   },
 
   link: {
@@ -51,10 +54,12 @@ const BlogPostCardCSS = {
     fontStyle: "normal",
     fontSize: "var(--mobView-5)",
     textDecoration: "none",
+    color: "var(--text-black)",
   },
 
   hr: {
     width: "100%",
+    color: "#777777",
   },
 
   /* Tablet view */

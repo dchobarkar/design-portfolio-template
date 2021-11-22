@@ -1,6 +1,7 @@
 const AboutCSS = {
   root: {
     minHeight: "var(--minHeight)",
+    backgroundColor: "#E6EFED",
   },
 
   video: {

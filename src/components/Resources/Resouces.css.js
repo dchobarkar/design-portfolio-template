@@ -6,6 +6,7 @@ const ResourcesCSS = {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#F7F7F7",
   },
 
   /* Tablet view */

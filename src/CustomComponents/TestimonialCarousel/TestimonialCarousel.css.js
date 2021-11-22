@@ -2,6 +2,7 @@ const TestimonialCarouselCSS = {
   root: {
     display: "flex",
     flexDirection: "column",
+    backgroundColor: "#F1F4F4",
   },
 
   slideContainer: {
@@ -17,6 +18,7 @@ const TestimonialCarouselCSS = {
     cursor: "pointer",
     opacity: "0.75",
     transition: "opacity 0.15s cubic-bezier(0.4, 0, 1, 1)",
+    color: "var(--text-black)",
 
     "&:hover": {
       opacity: "0.5",
@@ -70,6 +72,7 @@ const TestimonialCarouselCSS = {
     fontWeight: "600",
     fontStyle: "italic",
     fontSize: "var(--mobView-2)",
+    color: "#1544C0",
   },
 
   image: {
@@ -80,6 +83,7 @@ const TestimonialCarouselCSS = {
     fontFamily: "Dosis,sans-serif",
     fontWeight: "500",
     fontSize: "var(--mobView-4)",
+    color: "var(--text-black)",
   },
 
   websiteURL: {
@@ -87,6 +91,7 @@ const TestimonialCarouselCSS = {
     fontWeight: "300",
     fontStyle: "italic",
     fontSize: "var(--mobView-4)",
+    color: "var(--text-black)",
   },
 
   /* Tablet view */

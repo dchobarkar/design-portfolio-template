@@ -1,6 +1,7 @@
 const AccordionCSS = {
   root: {
     width: "100%",
+    backgroundColor: "#FFD849",
   },
 
   question: {
@@ -13,6 +14,8 @@ const AccordionCSS = {
     fontSize: "var(--mobView-4)",
     textAlign: "left",
     transition: "all 0.5s ease",
+    color: "var(--text-black)",
+    borderBottom: "solid 1px var(--text-white)",
 
     "&:hover": {
       transition: "all 0.5s ease",
@@ -25,6 +28,7 @@ const AccordionCSS = {
     position: "relative",
     top: "17px",
     left: "10px",
+    color: "var(--text-black)",
   },
 
   answerBox: {
@@ -37,6 +41,7 @@ const AccordionCSS = {
     fontSize: "var(--mobView-5)",
     lineHeight: "2rem",
     transition: "all 0.5s ease",
+    color: "var(--text-black)",
   },
 
   open: {

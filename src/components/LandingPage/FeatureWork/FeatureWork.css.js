@@ -6,6 +6,7 @@ const FeatureWorkCSS = {
     flexWrap: "wrap",
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#E6EFED",
   },
 
   /* Tablet view */

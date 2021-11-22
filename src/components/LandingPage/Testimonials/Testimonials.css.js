@@ -5,6 +5,7 @@ const TestimonialsCSS = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#E6EFED",
   },
 
   /* Tablet view */

@@ -7,9 +7,17 @@ import FeatureWork from "./FeatureWork/FeatureWork";
 import Testimonials from "./Testimonials/Testimonials";
 import Contact from "./Contact/Contact";
 
+import LandingPageCSS from "./LandingPage.css";
+import { makeStyles } from "@material-ui/styles";
+
+// CSS
+const useStyles = makeStyles({ ...LandingPageCSS });
+
 function LandingPage(props) {
+  const styles = useStyles();
+
   return (
-    <React.Fragment>
+    <div className={styles.root}>
       <Intro {...props} />
 
       <About {...props} />
@@ -21,7 +29,7 @@ function LandingPage(props) {
       <Testimonials {...props} />
 
       <Contact {...props} />
-    </React.Fragment>
+    </div>
   );
 }
 

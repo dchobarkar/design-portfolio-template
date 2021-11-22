@@ -13,6 +13,7 @@ const FAQCSS = {
     fontWeight: "400",
     fontSize: "var(--mobView-1)",
     textAlign: "center",
+    color: "var(--text-black)",
   },
 
   /* Tablet view */

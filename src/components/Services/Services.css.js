@@ -6,6 +6,7 @@ const ServicesCSS = {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#FEE934",
   },
 
   serviceIntro: {
@@ -18,6 +19,7 @@ const ServicesCSS = {
     fontSize: "var(--mobView-1)",
     letterSpacing: "3px",
     textAlign: "center",
+    color: "var(--text-white)",
   },
 
   /* Tablet view */

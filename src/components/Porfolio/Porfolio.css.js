@@ -7,6 +7,7 @@ const PortfolioCSS = {
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#FA6543",
   },
 
   header: {
@@ -16,6 +17,7 @@ const PortfolioCSS = {
     fontWeight: "400",
     fontSize: "var(--mobView-1)",
     textAlign: "center",
+    color: "#FFF45B",
   },
 
   portfolioContainer: {
