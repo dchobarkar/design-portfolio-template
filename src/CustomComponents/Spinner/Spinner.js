@@ -1,14 +1,33 @@
+import React, { useState, useEffect } from "react";
 import ContentLoader from "react-content-loader";
 import { makeStyles } from "@material-ui/styles";
 
 import SpinnerCSS from "./Spinner.css";
+import { spinnerBackgroundColor } from "../../util/color.util";
 
 // CSS
-const useStyles = makeStyles({ ...SpinnerCSS });
+const useStyles = makeStyles({
+  ...SpinnerCSS,
+  root: {
+    ...SpinnerCSS.root,
+    backgroundColor: ({ backgroundColor }) => backgroundColor,
+  },
+});
 
 // Driver component
 function Spinner(props) {
-  const classes = useStyles();
+  const [backgroundColor, setBackgroundColor] = useState("");
+
+  const cssProps = {
+    backgroundColor: backgroundColor,
+  };
+  const classes = useStyles(cssProps);
+
+  // Function to set header color and text color of the card
+  useEffect(() => {
+    const backgroundColor = spinnerBackgroundColor(window.location.pathname);
+    setBackgroundColor(backgroundColor);
+  }, [window.location.pathname]);
 
   return (
     <div className={classes.root}>

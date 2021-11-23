@@ -43,27 +43,22 @@ function App(props) {
             exact
             render={(props) => <LandingPage {...props} />}
           />
-
           <Route
             path="/portfolio"
             exact
             render={(props) => <Portfolio {...props} />}
           />
-
           <Route
             path="/services"
             exact
             render={(props) => <Services {...props} />}
           />
-
           <Route
             path="/resources"
             exact
             render={(props) => <Resources {...props} />}
           />
-
           <Route path="/about" exact render={(props) => <About {...props} />} />
-
           {/* Blogpost routes */}
           <Route
             path="/resources/importance-of-color-scheme-in-website"

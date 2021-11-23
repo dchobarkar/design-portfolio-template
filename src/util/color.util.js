@@ -82,3 +82,35 @@ export const portfolioCardColor = (pathName) => {
 
   return [headerColor, textColor];
 };
+
+// Function to select color for spinner background
+export const spinnerBackgroundColor = (pathName) => {
+  let backgroundColor = "";
+  switch (pathName) {
+    case "/":
+      backgroundColor = "#1848BF";
+      break;
+
+    case "/portfolio":
+      backgroundColor = "#FA6543";
+      break;
+
+    case "/services":
+      backgroundColor = "#FEE934";
+      break;
+
+    case "/resources":
+      backgroundColor = "#F7F7F7";
+      break;
+
+    case "/about":
+      backgroundColor = "#E6EFED";
+      break;
+
+    default:
+      backgroundColor = "#E6EFED";
+      break;
+  }
+
+  return backgroundColor;
+};

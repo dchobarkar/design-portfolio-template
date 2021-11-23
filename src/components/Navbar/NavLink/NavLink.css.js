@@ -6,10 +6,23 @@ const NavLinkCSS = {
     listStyleType: "none",
   },
 
+  // Mobile view
+  "@media only screen and (max-width:400px)": {
+    tab: {
+      "& a:link,a:visited": {
+        color: "var(--text-black)",
+      },
+    },
+  },
+
   /* Tablet view */
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
     tab: {
       fontSize: "var(--tabView-4)",
+
+      "& a:link,a:visited": {
+        color: "var(--text-black)",
+      },
     },
   },
 

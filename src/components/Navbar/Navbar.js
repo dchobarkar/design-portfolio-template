@@ -16,10 +16,41 @@ const useStyle = makeStyles({
   root: {
     ...NavbarCSS.root,
     backgroundColor: ({ backgroundColor }) => backgroundColor,
+  },
 
+  brand: {
+    ...NavbarCSS.brand,
     "& a:link,a:visited": {
-      ...NavbarCSS.root["& a:link,a:visited"],
       color: ({ color }) => color,
+    },
+  },
+
+  navbarIcon: {
+    ...NavbarCSS.navbarIcon,
+    color: ({ color }) => color,
+  },
+
+  // // "@media only screen and (min-width: 401px) and (max-width: 960px)": {
+  // //   ...NavbarCSS[
+  // //     "@media only screen and (min-width: 401px) and (max-width: 960px)"
+  // //   ],
+  // //   root: {
+  // //     ...NavbarCSS[
+  // //       "@media only screen and (min-width: 401px) and (max-width: 960px)"
+  // //     ],
+  // //     "& a:link,a:visited": {
+  // //       color: ({ color }) => color,
+  // //     },
+  // //   },
+  // // },
+
+  "@media only screen and (min-width: 961px)": {
+    ...NavbarCSS["@media only screen and (min-width: 961px)"],
+    root: {
+      ...NavbarCSS["@media only screen and (min-width: 961px)"].root,
+      "& a:link,a:visited": {
+        color: ({ color }) => color,
+      },
     },
   },
 });

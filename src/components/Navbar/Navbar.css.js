@@ -47,6 +47,13 @@ const NavbarCSS = {
     height: "2rem",
   },
 
+  /* Mobile view */
+  "@media only screen and (max-width:400px)": {
+    menu: {
+      backgroundColor: "#FEFEFE",
+    },
+  },
+
   /* Tablet view */
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
     root: {
@@ -55,6 +62,10 @@ const NavbarCSS = {
 
     brand: {
       fontSize: "var(--tabView-2)",
+    },
+
+    menu: {
+      backgroundColor: "#FEFEFE",
     },
   },
 
