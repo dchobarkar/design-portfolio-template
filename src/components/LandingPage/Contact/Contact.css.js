@@ -1,6 +1,6 @@
 const ContactCSS = {
   root: {
-    minHeight: "var(--minHeight)",
+    minHeight: "var(--mob-minHeight)",
     padding: "20px 30px",
     display: "flex",
     flexDirection: "column",
@@ -13,73 +13,69 @@ const ContactCSS = {
     width: "100%",
     padding: "20px 0",
     fontFamily: "Lato,sans-serif",
+    fontSize: "var(--mobView-1)",
     fontWeight: "600",
     fontStyle: "italic",
-    fontSize: "var(--mobView-1)",
     textAlign: "center",
     color: "#1544C0",
   },
 
-  formContainer: {
-    width: "100%",
+  container: {
     padding: "2rem",
     borderRadius: "1rem",
     backgroundColor: "#F1F4F4",
   },
 
-  formRow: {
+  row: {
     marginBottom: "2rem",
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-start",
-    fontStyle: "Montserrat",
-    fontWeight: "500",
-    color: "var(--text-black)",
 
     "& input": {
-      width: "100%",
-      padding: "7px",
+      padding: "0.5rem",
       fontSize: "var(--mobView-4)",
       border: "none",
-      backgroundColor: "var(--text-white)",
       borderRadius: "0.5rem",
       color: "var(--text-black)",
+      backgroundColor: "var(--text-white)",
     },
 
     "& textarea": {
-      width: "100%",
       minHeight: "13rem",
-      padding: "7px",
+      padding: "0.5rem",
       fontSize: "var(--mobView-4)",
       border: "none",
-      backgroundColor: "var(--text-white)",
       borderRadius: "0.5rem",
       color: "var(--text-black)",
+      backgroundColor: "var(--text-white)",
     },
 
     "& label": {
       fontFamily: "Montserrat,sans-serif",
-      fontWeight: "500",
       fontSize: "var(--mobView-4)",
+      fontWeight: "500",
       marginBottom: "1rem",
     },
 
     "& button": {
       padding: "0.5rem",
       fontFamily: "Montserrat,sans-serif",
-      fontWeight: "600",
       fontSize: "var(--mobView-3)",
-      borderRadius: "0.5rem",
-      backgroundColor: "var(--text-white)",
-      color: "var(--text-black)",
+      fontWeight: "600",
       border: "none",
+      borderRadius: "0.5rem",
+      cursor: "pointer",
+      color: "var(--text-black)",
+      backgroundColor: "var(--text-white)",
     },
   },
 
   /* Tablet view */
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
     root: {
-      padding: "0px 60px",
+      minHeight: "var(--tab-minHeight)",
+      padding: "20px 60px",
       flexDirection: "row",
     },
 
@@ -88,11 +84,11 @@ const ContactCSS = {
       fontSize: "var(--tabView-1)",
     },
 
-    formContainer: {
-      width: "50vw",
+    container: {
+      width: "40vw",
     },
 
-    formRow: {
+    row: {
       "& input": {
         fontSize: "var(--tabView-4)",
       },
@@ -114,6 +110,7 @@ const ContactCSS = {
   /* Desktop view */
   "@media only screen and (min-width: 961px)": {
     root: {
+      minHeight: "var(--des-minHeight)",
       padding: "20px 120px",
       flexDirection: "row",
       justifyContent: "space-between",
@@ -124,12 +121,12 @@ const ContactCSS = {
       fontSize: "var(--desView-1)",
     },
 
-    formContainer: {
-      width: "40vw",
+    container: {
+      width: "35vw",
       padding: "2.5rem 3rem",
     },
 
-    formRow: {
+    row: {
       "& input": {
         fontSize: "var(--desView-4)",
       },

@@ -2,8 +2,8 @@ import React from "react";
 import { makeStyles } from "@material-ui/styles";
 
 import ServiceCard from "../../../CustomComponents/ServiceCard/ServiceCard";
-import ServicesListCSS from "./ServiceList.css";
 import ServicesListList from "./ServicesList.list";
+import ServicesListCSS from "./ServiceList.css";
 
 // CSS
 const useStyles = makeStyles({ ...ServicesListCSS });
@@ -15,11 +15,7 @@ function ServicesList(props) {
   return (
     <section className={classes.root}>
       {ServicesListList.map((service) => (
-        <ServiceCard
-          key={service.title}
-          title={service.title}
-          description={service.description}
-        />
+        <ServiceCard key={service.service} {...service} />
       ))}
     </section>
   );

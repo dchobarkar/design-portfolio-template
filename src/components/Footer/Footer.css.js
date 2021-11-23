@@ -2,8 +2,8 @@ const FooterCSS = {
   root: {
     padding: "1rem 30px",
     fontFamily: "Montserrat,sans-serif",
-    fontWeight: "400",
     fontSize: "var(--mobView-4)",
+    fontWeight: "400",
     textAlign: "center",
     color: "var(--text-black)",
     backgroundColor: "var(--background-white)",

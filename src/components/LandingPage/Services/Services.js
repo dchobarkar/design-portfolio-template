@@ -15,13 +15,13 @@ function Services(props) {
 
   return (
     <section className={classes.root}>
-      <div className={classes.serviceCardContainer}>
+      <div className={classes.container}>
         {ServicesList.map((service) => (
-          <ServiceCard key={service.title} {...service} />
+          <ServiceCard key={service.service} {...service} />
         ))}
       </div>
 
-      <Link className={classes.serviceLink} to="/services">
+      <Link className={classes.link} to="/services">
         More
       </Link>
     </section>

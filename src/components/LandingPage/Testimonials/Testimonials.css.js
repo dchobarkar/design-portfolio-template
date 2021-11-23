@@ -1,6 +1,6 @@
 const TestimonialsCSS = {
   root: {
-    minHeight: "var(--minHeight)",
+    minHeight: "var(--mob-minHeight)",
     padding: "0 30px",
     display: "flex",
     justifyContent: "center",
@@ -11,6 +11,7 @@ const TestimonialsCSS = {
   /* Tablet view */
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
     root: {
+      minHeight: "var(--tab-minHeight)",
       padding: "0px 60px",
     },
   },
@@ -18,6 +19,7 @@ const TestimonialsCSS = {
   /* Desktop view */
   "@media only screen and (min-width: 961px)": {
     root: {
+      minHeight: "var(--des-minHeight)",
       padding: "0px 120px",
     },
   },

@@ -1,9 +1,13 @@
 const NavLinkCSS = {
   tab: {
-    padding: "2rem 0",
-    fontWeight: "400",
+    padding: "1.5rem 0",
     fontSize: "var(--mobView-4)",
+    fontWeight: "400",
     listStyleType: "none",
+  },
+
+  active: {
+    color: "gray",
   },
 
   // Mobile view

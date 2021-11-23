@@ -1,6 +1,5 @@
 const BlogPostCardCSS = {
   root: {
-    width: "100%",
     paddingTop: "2rem",
     display: "flex",
     flexDirection: "column",
@@ -8,7 +7,7 @@ const BlogPostCardCSS = {
     alignItems: "center",
   },
 
-  blogPostContainer: {
+  container: {
     width: "90%",
     paddingBottom: "1rem",
   },
@@ -16,20 +15,19 @@ const BlogPostCardCSS = {
   header: {
     paddingBottom: "0.5rem",
     fontFamily: "Dosis,sans-serif",
-    fontWeight: "500",
     fontSize: "var(--mobView-2)",
+    fontWeight: "500",
     color: "var(--text-black)",
   },
 
-  blogDetails: {
+  details: {
     paddingBottom: "1rem",
     display: "flex",
     justifyContent: "flex-start",
     alignItems: "center",
     fontFamily: "Lato,sans-serif",
-    fontWeight: "300",
     fontSize: "var(--mobView-5)",
-    fontStyle: "normal",
+    fontWeight: "300",
     color: "var(--text-black)",
 
     "& img": {
@@ -42,23 +40,21 @@ const BlogPostCardCSS = {
   abstract: {
     padding: "0.5rem 0",
     fontFamily: "Lato,sans-serif",
-    fontWeight: "400",
     fontSize: "var(--mobView-4)",
-    fontStyle: "normal",
+    fontWeight: "400",
     color: "var(--text-black)",
   },
 
   link: {
     fontFamily: "Montserrat,sans-serif",
-    fontWeight: "400",
-    fontStyle: "normal",
     fontSize: "var(--mobView-5)",
+    fontWeight: "400",
     textDecoration: "none",
     color: "var(--text-black)",
   },
 
   hr: {
-    width: "100%",
+    width: "90%",
     color: "#777777",
   },
 
@@ -68,7 +64,7 @@ const BlogPostCardCSS = {
       paddingTop: "3rem",
     },
 
-    blogPostContainer: {
+    container: {
       width: "80%",
     },
 
@@ -76,7 +72,7 @@ const BlogPostCardCSS = {
       fontSize: "var(--tabView-2)",
     },
 
-    blogDetails: {
+    details: {
       fontSize: "var(--tabView-5)",
     },
 
@@ -95,15 +91,16 @@ const BlogPostCardCSS = {
       paddingTop: "4rem",
     },
 
-    blogPostContainer: {
+    container: {
       width: "80%",
+      paddingBottom: "2rem",
     },
 
     header: {
       fontSize: "var(--desView-2)",
     },
 
-    blogDetails: {
+    details: {
       fontSize: "var(--desView-5)",
     },
 

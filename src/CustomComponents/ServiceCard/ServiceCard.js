@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/styles";
 
-import ServiceCardCSS from "./ServiceCard.css";
 import { serviceCardColor } from "../../util/color.util";
+import ServiceCardCSS from "./ServiceCard.css";
 
 // CSS
 const useStyles = makeStyles({
   ...ServiceCardCSS,
-  title: {
-    ...ServiceCardCSS.title,
+  service: {
+    ...ServiceCardCSS.service,
     color: ({ headerColor }) => headerColor,
   },
   description: {
@@ -19,7 +19,9 @@ const useStyles = makeStyles({
 
 // Driver component
 function ServiceCard(props) {
+  // Variable for conditional color for header
   const [headerColor, setHeaderColor] = useState("");
+  // Variable for conditional color for text
   const [textColor, setTextColor] = useState("");
 
   const cssProps = {
@@ -28,8 +30,8 @@ function ServiceCard(props) {
   };
   const classes = useStyles(cssProps);
 
-  // Function to set header color and text color of the card
   useEffect(() => {
+    // Function to get header color and text color according to url
     const [headerColor, textColor] = serviceCardColor(window.location.pathname);
     setHeaderColor(headerColor);
     setTextColor(textColor);
@@ -37,7 +39,7 @@ function ServiceCard(props) {
 
   return (
     <div className={classes.root}>
-      <h2 className={classes.title}>{props.title}</h2>
+      <h2 className={classes.service}>{props.service}</h2>
 
       <p className={classes.description}>{props.description}</p>
     </div>

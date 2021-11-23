@@ -1,6 +1,6 @@
 const LandingPageCSS = {
   root: {
-    background: "#1848BF",
+    backgroundColor: "#1848BF",
   },
 };
 

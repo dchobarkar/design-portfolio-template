@@ -12,7 +12,7 @@ function TestimonialCard(props) {
 
   return (
     <div className={classes.root}>
-      <p className={classes.comment}>"{props.comment}"</p>
+      <h2 className={classes.comment}>"{props.comment}"</h2>
 
       <img className={classes.image} alt={props.name} src={props.imgURL} />
 

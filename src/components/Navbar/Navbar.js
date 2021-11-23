@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from "react";
-import clsx from "clsx";
+import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router";
 import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/styles";
+import clsx from "clsx";
 
 import { ReactComponent as CloseIcon } from "../../Assets/svg/Close.svg";
 import { ReactComponent as MenuIcon } from "../../Assets/svg/Menu.svg";
+
 import NavLink from "./NavLink/NavLink";
-import NavbarCSS from "./Navbar.css";
 import { navbarColor } from "../../util/color.util";
+import NavbarCSS from "./Navbar.css";
 
 // CSS
 const useStyle = makeStyles({
@@ -21,35 +22,21 @@ const useStyle = makeStyles({
   brand: {
     ...NavbarCSS.brand,
     "& a:link,a:visited": {
-      color: ({ color }) => color,
+      color: ({ textColor }) => textColor,
     },
   },
 
   navbarIcon: {
     ...NavbarCSS.navbarIcon,
-    color: ({ color }) => color,
+    color: ({ textColor }) => textColor,
   },
-
-  // // "@media only screen and (min-width: 401px) and (max-width: 960px)": {
-  // //   ...NavbarCSS[
-  // //     "@media only screen and (min-width: 401px) and (max-width: 960px)"
-  // //   ],
-  // //   root: {
-  // //     ...NavbarCSS[
-  // //       "@media only screen and (min-width: 401px) and (max-width: 960px)"
-  // //     ],
-  // //     "& a:link,a:visited": {
-  // //       color: ({ color }) => color,
-  // //     },
-  // //   },
-  // // },
 
   "@media only screen and (min-width: 961px)": {
     ...NavbarCSS["@media only screen and (min-width: 961px)"],
     root: {
       ...NavbarCSS["@media only screen and (min-width: 961px)"].root,
       "& a:link,a:visited": {
-        color: ({ color }) => color,
+        color: ({ textColor }) => textColor,
       },
     },
   },
@@ -57,27 +44,30 @@ const useStyle = makeStyles({
 
 // Driver component
 function Navbar(props) {
-  const [color, setColor] = useState("");
+  // Variable for conditional color for text
+  const [textColor, setTextColor] = useState("");
+  // Variable for conditional color for background
   const [backgroundColor, setBackgroundColor] = useState("");
+  // Flag to handle navbar state (Mobile view only)
+  const [isOpen, setIsOpen] = useState(false);
 
   const cssProps = {
-    color: color,
+    textColor: textColor,
     backgroundColor: backgroundColor,
   };
   const classes = useStyle(cssProps);
 
-  // Function to change the color and background color of navbar according to url
   useEffect(() => {
-    const [color, backgroundColor] = navbarColor(window.location.pathname);
-    setColor(color);
+    // Function to get text color and background color according to url
+    const [textColor, backgroundColor] = navbarColor(window.location.pathname);
+    setTextColor(textColor);
     setBackgroundColor(backgroundColor);
   }, [window.location.pathname]);
 
-  // Flag to handle navbar state (Mobile view only)
-  const [isOpen, setIsOpen] = React.useState(false);
-
+  // Function to change the state of navbar menu
   const toggleNavbar = () => setIsOpen(!isOpen);
 
+  // Function to close the navbar menu
   const closeMobileMenu = () => setIsOpen(false);
 
   return (

@@ -1,4 +1,5 @@
 import React from "react";
+import { makeStyles } from "@material-ui/styles";
 
 import Intro from "./Intro/Intro";
 import About from "./About/About";
@@ -8,7 +9,6 @@ import Testimonials from "./Testimonials/Testimonials";
 import Contact from "./Contact/Contact";
 
 import LandingPageCSS from "./LandingPage.css";
-import { makeStyles } from "@material-ui/styles";
 
 // CSS
 const useStyles = makeStyles({ ...LandingPageCSS });

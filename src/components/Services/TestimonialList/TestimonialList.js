@@ -14,9 +14,9 @@ function TestimonialList(props) {
 
   return (
     <div className={classes.root}>
-      <h2 className={classes.header}>My clients say the nicest things.</h2>
+      <h1 className={classes.header}>My clients say the nicest things.</h1>
 
-      <div className={classes.testimonialList}>
+      <div className={classes.container}>
         {TestimonialListList.map((testimonial) => (
           <TestimonialCard key={testimonial.name} {...testimonial} />
         ))}

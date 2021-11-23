@@ -13,13 +13,14 @@ const NavbarCSS = {
   },
 
   brand: {
-    fontWeight: "500",
     fontSize: "var(--mobView-2)",
+    fontWeight: "500",
   },
 
   menu: {
-    width: "100%",
-    height: "80vh",
+    width: "90%",
+    height: "75vh",
+    marginLeft: "1rem",
     position: "absolute",
     top: "-100%",
     left: "0",
@@ -81,10 +82,12 @@ const NavbarCSS = {
     },
 
     menu: {
+      height: "4rem",
       position: "static",
       flexDirection: "row",
       justifyContent: "flex-end",
       opacity: "1",
+      transition: "all 0.7s ease",
     },
 
     navbarIcon: {

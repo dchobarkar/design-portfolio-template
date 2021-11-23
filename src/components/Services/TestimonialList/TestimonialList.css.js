@@ -1,6 +1,6 @@
 const TestimonialListCSS = {
   root: {
-    padding: "2rem 0",
+    paddingTop: "2rem",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -10,14 +10,14 @@ const TestimonialListCSS = {
   header: {
     padding: "2rem",
     fontFamily: "Dosis,sans-serif",
-    fontWeight: "400",
     fontSize: "var(--mobView-1)",
+    fontWeight: "400",
     textAlign: "center",
-    color: "var(--text-black)",
+    color: "var(--text-white)",
   },
 
-  testimonialList: {
-    padding: "1rem",
+  container: {
+    padding: "1rem 0",
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",

@@ -1,6 +1,5 @@
 const FAQCSS = {
   root: {
-    padding: "2rem 0",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -8,18 +7,17 @@ const FAQCSS = {
   },
 
   header: {
-    width: "70vw",
+    paddingBottom: "2rem",
     fontFamily: "Dosis,sans-serif",
-    fontWeight: "400",
     fontSize: "var(--mobView-1)",
+    fontWeight: "400",
     textAlign: "center",
-    color: "var(--text-black)",
+    color: "var(--text-white)",
   },
 
   /* Tablet view */
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
     header: {
-      padding: "1.5rem",
       fontSize: "var(--tabView-1)",
     },
   },
@@ -27,7 +25,6 @@ const FAQCSS = {
   /* Desktop view */
   "@media only screen and (min-width: 961px)": {
     header: {
-      padding: "1.5rem",
       fontSize: "var(--desView-1)",
     },
   },

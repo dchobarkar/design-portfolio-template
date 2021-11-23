@@ -8,53 +8,44 @@ const AccordionCSS = {
     padding: "2rem",
     display: "flex",
     justifyContent: "space-between",
-    lineHeight: "2rem",
-    fontFamily: "Lato,sans-serif",
-    fontWeight: "400",
-    fontSize: "var(--mobView-4)",
-    textAlign: "left",
-    transition: "all 0.5s ease",
-    color: "var(--text-black)",
-    borderBottom: "solid 1px var(--text-white)",
 
-    "&:hover": {
-      transition: "all 0.5s ease",
+    "& h2": {
+      fontFamily: "Lato,sans-serif",
+      fontSize: "var(--mobView-4)",
+      fontWeight: "400",
+      color: "var(--text-black)",
     },
   },
 
   icon: {
-    width: "15px",
-    height: "15px",
+    width: "1rem",
+    height: "1rem",
     position: "relative",
-    top: "17px",
     left: "10px",
     color: "var(--text-black)",
   },
 
   answerBox: {
-    height: "0px",
     padding: "2rem",
     marginBottom: "3rem",
     opacity: 0,
     fontFamily: "Lato,sans-serif",
-    fontWeight: "300",
     fontSize: "var(--mobView-5)",
+    fontWeight: "300",
     lineHeight: "2rem",
-    transition: "all 0.5s ease",
     color: "var(--text-black)",
+    transition: "all 0.5s ease",
   },
 
   open: {
-    height: "100%",
     display: "block",
     opacity: 1,
     transition: "all 0.5s ease",
   },
 
   close: {
-    height: "100%",
     display: "none",
-    opacity: 1,
+    opacity: 0,
     transition: "all 0.5s ease",
   },
 
@@ -65,8 +56,9 @@ const AccordionCSS = {
     },
 
     question: {
-      width: "100%",
-      fontSize: "var(--tabView-4)",
+      "& h2": {
+        fontSize: "var(--tabView-4)",
+      },
     },
 
     answerBox: {
@@ -77,12 +69,13 @@ const AccordionCSS = {
   /* Desktop view */
   "@media only screen and (min-width: 961px)": {
     root: {
-      width: "65vw",
+      width: "60vw",
     },
 
     question: {
-      width: "100%",
-      fontSize: "var(--desView-4)",
+      "& h2": {
+        fontSize: "var(--desView-4)",
+      },
     },
 
     answerBox: {

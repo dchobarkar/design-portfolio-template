@@ -1,6 +1,6 @@
-import React from "react";
-import clsx from "clsx";
+import React, { useState } from "react";
 import { makeStyles } from "@material-ui/styles";
+import clsx from "clsx";
 
 import { ReactComponent as DoubleLeftIcon } from "../../Assets/svg/DoubleLeft.svg";
 import { ReactComponent as DoubleRightIcon } from "../../Assets/svg/DoubleRight.svg";
@@ -18,7 +18,7 @@ function Indicator(props) {
       <span
         className={
           props.index === props.activeIndex
-            ? clsx(classes.indicator, classes.indicatorActive)
+            ? clsx(classes.indicator, classes.activeIndicator)
             : classes.indicator
         }
         onClick={props.onClick}
@@ -35,23 +35,17 @@ function Slide(props) {
     <li
       className={
         props.index === props.activeIndex
-          ? clsx(classes.slide, classes.slideActive)
+          ? clsx(classes.slide, classes.activeSlide)
           : classes.slide
       }
     >
-      <p className={classes.comment}>"{props.testimonial.comment}"</p>
+      <h2 className={classes.comment}>"{props.comment}"</h2>
 
-      <img
-        className={classes.image}
-        alt={props.testimonial.name}
-        src={props.testimonial.imgURL}
-      />
+      <img className={classes.image} alt={props.name} src={props.imgURL} />
 
       <p>
-        <strong className={classes.name}>{props.testimonial.name}</strong>,{" "}
-        <small className={classes.websiteURL}>
-          {props.testimonial.websiteURL}
-        </small>
+        <strong className={classes.name}>{props.name}</strong>,{" "}
+        <small className={classes.websiteURL}>{props.websiteURL}</small>
       </p>
     </li>
   );
@@ -62,22 +56,21 @@ function TestimonialCarousel(props) {
   const classes = useStyles();
 
   // Flag for active slide
-  const [activeIndex, setActiveIndex] = React.useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
+  // Function to go the index'th slide
   const goToSlide = (index) => {
     setActiveIndex(index);
   };
 
   // Function to go next slide
-  const goToPreSlide = (e) => {
+  const preSlide = (e) => {
     e.preventDefault();
 
     let index = activeIndex;
-    let { list } = props;
-    let length = list.length;
 
     if (index < 1) {
-      index = length;
+      index = props.list.length;
     }
 
     --index;
@@ -86,14 +79,12 @@ function TestimonialCarousel(props) {
   };
 
   // Function to go previous slide
-  const goToNextSlide = (e) => {
+  const nextSlide = (e) => {
     e.preventDefault();
 
     let index = activeIndex;
-    let { list } = props;
-    let length = list.length - 1;
 
-    if (index === length) {
+    if (index === props.list.length - 1) {
       index = -1;
     }
 
@@ -104,11 +95,8 @@ function TestimonialCarousel(props) {
 
   return (
     <div className={classes.root}>
-      <div className={classes.slideContainer}>
-        <DoubleLeftIcon
-          className={classes.arrow}
-          onClick={(e) => goToPreSlide(e)}
-        />
+      <div className={classes.container}>
+        <DoubleLeftIcon className={classes.icon} onClick={(e) => preSlide(e)} />
 
         <ul>
           {props.list.map((testimonial, index) => (
@@ -116,14 +104,14 @@ function TestimonialCarousel(props) {
               key={index}
               index={index}
               activeIndex={activeIndex}
-              testimonial={testimonial}
+              {...testimonial}
             />
           ))}
         </ul>
 
         <DoubleRightIcon
-          className={classes.arrow}
-          onClick={(e) => goToNextSlide(e)}
+          className={classes.icon}
+          onClick={(e) => nextSlide(e)}
         />
       </div>
 

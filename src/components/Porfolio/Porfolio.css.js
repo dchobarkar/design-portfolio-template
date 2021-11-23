@@ -1,8 +1,7 @@
 const PortfolioCSS = {
   root: {
-    minHeight: "var(--minHeight)",
-    width: "100%",
-    padding: "0 30px",
+    minHeight: "var(--mob-minHeight)",
+    padding: "2rem 30px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -11,16 +10,18 @@ const PortfolioCSS = {
   },
 
   header: {
-    width: "100%",
-    padding: "3rem 0",
+    height: "20vh",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
     fontFamily: "Dosis,sans-serif",
-    fontWeight: "400",
     fontSize: "var(--mobView-1)",
+    fontWeight: "400",
     textAlign: "center",
     color: "#FFF45B",
   },
 
-  portfolioContainer: {
+  container: {
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "center",
@@ -30,10 +31,12 @@ const PortfolioCSS = {
   /* Tablet view */
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
     root: {
-      padding: "0px 60px",
+      minHeight: "var(--tab-minHeight)",
+      padding: "2rem 60px",
     },
 
     header: {
+      height: "40vh",
       fontSize: "var(--tabView-1)",
     },
   },
@@ -41,10 +44,12 @@ const PortfolioCSS = {
   /* Desktop view */
   "@media only screen and (min-width: 961px)": {
     root: {
-      padding: "0px 120px",
+      minHeight: "var(--des-minHeight)",
+      padding: "2rem 120px",
     },
 
     header: {
+      height: "40vh",
       fontSize: "var(--desView-1)",
     },
   },

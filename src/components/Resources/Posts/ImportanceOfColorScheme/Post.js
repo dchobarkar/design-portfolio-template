@@ -13,13 +13,11 @@ function ImportanceOfColorScheme(props) {
 
   return (
     <div className={classes.root}>
-      <h1 className={classes.postHeader}>
-        Importance of Color Scheme in Website
-      </h1>
+      <h1 className={classes.header}>Importance of Color Scheme in Website</h1>
 
-      <div className={classes.authorContainer}>
+      <div className={classes.container}>
         <img
-          className={classes.authorImage}
+          className={classes.image}
           src={AuthorImg}
           alt="Darshan Chobarkar"
         />

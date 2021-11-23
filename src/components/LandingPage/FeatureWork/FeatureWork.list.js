@@ -8,7 +8,7 @@ const FeatureWorkList = [
     name: "A B Community",
     imageURL: ABCommunity,
     services: "Custom Website Devlopment",
-    websiteURL: "www.abcommunity.com",
+    websiteURL: "https://www.abcommunity.com",
   },
   {
     name: "Mahesh Finance Services",

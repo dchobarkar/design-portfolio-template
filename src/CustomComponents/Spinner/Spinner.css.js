@@ -1,6 +1,6 @@
 const SpinnerCSS = {
   root: {
-    minHeight: "var(--minHeight)",
+    minHeight: "var(--mob-minHeight)",
     width: "100%",
     display: "flex",
     justifyContent: "center",

@@ -8,16 +8,16 @@ const PostCSS = {
     backgroundColor: "#E6EFED",
   },
 
-  postHeader: {
+  header: {
     paddingBottom: "1rem",
     fontFamily: "Dosis,sans-serif",
-    fontWeight: "500",
     fontSize: "var(--mobView-1)",
-    color: "#F86449",
+    fontWeight: "500",
     textAlign: "Center",
+    color: "#F86449",
   },
 
-  authorContainer: {
+  container: {
     width: "100%",
     paddingBottom: "1rem",
     display: "flex",
@@ -26,7 +26,7 @@ const PostCSS = {
     borderBottom: "1px solid var(--text-white)",
   },
 
-  authorImage: {
+  image: {
     width: "2.5rem",
     marginRight: "1rem",
     borderRadius: "50%",
@@ -34,16 +34,16 @@ const PostCSS = {
 
   author: {
     fontFamily: "Lato,sans-serif",
-    fontWeight: "300",
     fontSize: "var(--mobView-5)",
+    fontWeight: "300",
     color: "var(--text-black)",
   },
 
   content: {
     paddingTop: "1rem",
     fontFamily: "Lato,sans-serif",
-    fontWeight: "500",
     fontSize: "var(--mobView-3)",
+    fontWeight: "400",
     lineHeight: "1.5rem",
     color: "var(--text-black)",
   },
@@ -54,15 +54,15 @@ const PostCSS = {
       padding: "4rem 60px",
     },
 
-    postHeader: {
+    header: {
       fontSize: "var(--tabView-1)",
     },
 
-    authorContainer: {
+    container: {
       paddingLeft: "10%",
     },
 
-    authorImage: {
+    image: {
       width: "3rem",
       marginRight: "2rem",
     },
@@ -84,15 +84,15 @@ const PostCSS = {
       padding: "4rem 120px",
     },
 
-    postHeader: {
+    header: {
       fontSize: "var(--desView-1)",
     },
 
-    authorContainer: {
+    container: {
       paddingLeft: "20%",
     },
 
-    authorImage: {
+    image: {
       width: "3rem",
       marginRight: "3rem",
     },
@@ -102,7 +102,7 @@ const PostCSS = {
     },
 
     content: {
-      width: "60%",
+      width: "50%",
       paddingTop: "3rem",
       fontSize: "var(--desView-3)",
     },

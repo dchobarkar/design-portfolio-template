@@ -13,10 +13,10 @@ function BlogPostCard(props) {
 
   return (
     <div className={classes.root}>
-      <div className={classes.blogPostContainer}>
+      <div className={classes.container}>
         <h1 className={classes.header}>{props.heading}</h1>
 
-        <div className={classes.blogDetails}>
+        <div className={classes.details}>
           <img alt={props.author} src={props.authorImg} />
 
           <p>

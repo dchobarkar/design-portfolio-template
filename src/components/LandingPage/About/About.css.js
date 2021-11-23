@@ -1,6 +1,6 @@
 const AboutCSS = {
   root: {
-    minHeight: "var(--minHeight)",
+    minHeight: "var(--mob-minHeight)",
     padding: "0px 30px",
     display: "flex",
     flexDirection: "column",
@@ -14,20 +14,25 @@ const AboutCSS = {
     right: "25px",
   },
 
-  aboutIntro: {
+  introduction: {
     padding: "2rem 0",
     fontFamily: "'Lato',sans-serif",
+    fontSize: "var(--mobView-4)",
     fontWeight: "500",
     fontStyle: "italic",
-    fontSize: "var(--mobView-4)",
     lineHeight: "1.5rem",
     textAlign: "justify",
     color: "var(--text-white)",
+
+    "& p": {
+      paddingBottom: "1.5rem",
+    },
   },
 
   /* Tablet view */
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
     root: {
+      minHeight: "var(--tab-minHeight)",
       padding: "0px 60px",
     },
 
@@ -35,7 +40,7 @@ const AboutCSS = {
       maxWidth: "50vw",
     },
 
-    aboutIntro: {
+    introduction: {
       fontSize: "var(--tabView-4)",
     },
   },
@@ -43,16 +48,18 @@ const AboutCSS = {
   /* Desktop view */
   "@media only screen and (min-width: 961px)": {
     root: {
+      minHeight: "var(--des-minHeight)",
       padding: "0px 120px",
       flexDirection: "row-reverse",
     },
 
     image: {
       maxWidth: "30vw",
+      marginBottom: "4rem",
       position: "static",
     },
 
-    aboutIntro: {
+    introduction: {
       fontSize: "var(--desView-4)",
       lineHeight: "1.7rem",
     },

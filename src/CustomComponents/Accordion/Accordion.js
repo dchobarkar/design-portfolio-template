@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import clsx from "clsx";
 import { makeStyles } from "@material-ui/styles";
 
@@ -14,12 +14,12 @@ function Accordion(props) {
   const classes = useStyles();
 
   // Flag to set block class
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className={classes.root}>
       <div className={classes.question} onClick={() => setIsOpen(!isOpen)}>
-        <p> {props.que}</p>
+        <h2> {props.que}</h2>
 
         {isOpen ? (
           <UpArrowIcon className={classes.icon} />

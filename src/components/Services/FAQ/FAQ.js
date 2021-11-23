@@ -14,10 +14,10 @@ function FAQ(props) {
 
   return (
     <section className={classes.root}>
-      <h2 className={classes.header}>Frequently Asked Questions</h2>
+      <h1 className={classes.header}>Frequently Asked Questions</h1>
 
       {FAQList.map((FAQ) => (
-        <Accordion key={FAQ.que} que={FAQ.que} ans={FAQ.ans} />
+        <Accordion key={FAQ.que} {...FAQ} />
       ))}
     </section>
   );

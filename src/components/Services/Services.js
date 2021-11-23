@@ -15,8 +15,8 @@ function Services(props) {
 
   return (
     <div className={classes.root}>
-      <div className={classes.serviceIntro}>
-        I build capacity for organizations with a greater purpose...
+      <div className={classes.intro}>
+        <h1>I build capacity for organizations with a greater purpose...</h1>
       </div>
 
       <ServicesList />

@@ -1,6 +1,6 @@
 const IntroCSS = {
   root: {
-    height: "var(--minHeight)",
+    minHeight: "var(--mob-minHeight)",
     padding: "0px 30px",
     display: "flex",
     justifyContent: "center",
@@ -9,8 +9,8 @@ const IntroCSS = {
 
   header: {
     fontFamily: "'Dosis',sans-serif",
-    fontWeight: "700",
     fontSize: "var(--mobView-1)",
+    fontWeight: "700",
     textAlign: "center",
     color: "#96FECB",
   },
@@ -18,6 +18,7 @@ const IntroCSS = {
   /* Tablet view */
   "@media only screen and (min-width: 401px) and (max-width: 960px)": {
     root: {
+      minHeight: "var(--tab-minHeight)",
       padding: "0px 60px",
     },
 
@@ -29,6 +30,7 @@ const IntroCSS = {
   /* Desktop view */
   "@media only screen and (min-width: 961px)": {
     root: {
+      minHeight: "var(--des-minHeight)",
       padding: "0px 120px",
     },
 

@@ -1,6 +1,6 @@
 const TestimonialCardCSS = {
   root: {
-    minHeight: "400px",
+    minHeight: "100px",
     width: "300px",
     margin: "1rem",
     padding: "2rem 0",
@@ -16,31 +16,31 @@ const TestimonialCardCSS = {
     padding: "1rem",
     lineHeight: "2rem",
     fontFamily: "Montserrat,sans-serif",
-    fontWeight: "500",
     fontSize: "var(--mobView-2)",
+    fontWeight: "500",
     textAlign: "center",
     color: "var(--text-white)",
   },
 
   image: {
-    width: "50px",
+    width: "5rem",
     margin: "1rem",
   },
 
   name: {
     padding: "0.5rem",
     fontFamily: "Lato,sans-serif",
-    fontWeight: "400",
     fontSize: "var(--mobView-4)",
+    fontWeight: "400",
     letterSpacing: "0.1rem",
     color: "var(--text-black)",
   },
 
   websiteURL: {
     fontFamily: "Lato,sans-serif",
+    fontSize: "var(--mobView-5)",
     fontWeight: "300",
     fontStyle: "italic",
-    fontSize: "var(--mobView-5)",
     color: "var(--text-black)",
   },
 

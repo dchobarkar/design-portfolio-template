@@ -3,7 +3,9 @@
   --text-black: "#212020";
   --text-white: #FEFEFF;
 
-  --minHeight: 90vh;
+  --mob-minHeight:80vh;
+  --tab-minHeight:85vh;
+  --des-minHeight: 90vh;
 
   /* Font size */
   /* Mobile view */

@@ -1,7 +1,7 @@
 import React from "react";
-import clsx from "clsx";
 import { Link, useRouteMatch } from "react-router-dom";
 import { makeStyles } from "@material-ui/styles";
+import clsx from "clsx";
 
 import NavLinkCSS from "./NavLink.css";
 

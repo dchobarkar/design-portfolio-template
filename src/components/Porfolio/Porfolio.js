@@ -18,7 +18,7 @@ function Portfolio(props) {
         Here's a sampling of what I've been up to lately.
       </h1>
 
-      <div className={classes.portfolioContainer}>
+      <div className={classes.container}>
         {PortfolioList.map((portfolio) => (
           <PortfolioCard key={portfolio.name} {...portfolio} />
         ))}

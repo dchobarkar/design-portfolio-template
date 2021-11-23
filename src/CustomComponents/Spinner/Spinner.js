@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import ContentLoader from "react-content-loader";
 import { makeStyles } from "@material-ui/styles";
 
-import SpinnerCSS from "./Spinner.css";
 import { spinnerBackgroundColor } from "../../util/color.util";
+import SpinnerCSS from "./Spinner.css";
 
 // CSS
 const useStyles = makeStyles({
@@ -16,6 +16,7 @@ const useStyles = makeStyles({
 
 // Driver component
 function Spinner(props) {
+  // Variable for conditional color for background
   const [backgroundColor, setBackgroundColor] = useState("");
 
   const cssProps = {
@@ -23,8 +24,8 @@ function Spinner(props) {
   };
   const classes = useStyles(cssProps);
 
-  // Function to set header color and text color of the card
   useEffect(() => {
+    // Function to get background color according to url
     const backgroundColor = spinnerBackgroundColor(window.location.pathname);
     setBackgroundColor(backgroundColor);
   }, [window.location.pathname]);

@@ -12,25 +12,25 @@ function Contact(props) {
 
   return (
     <section className={classes.root}>
-      <h2 className={classes.header}>Let's Connect.</h2>
+      <h1 className={classes.header}>Let's Connect.</h1>
 
-      <form className={classes.formContainer}>
-        <div className={classes.formRow}>
+      <form className={classes.container}>
+        <div className={classes.row}>
           <label htmlFor="name">Name</label>
           <input id="name" name="name" type="text" />
         </div>
 
-        <div className={classes.formRow}>
+        <div className={classes.row}>
           <label htmlFor="email">Email</label>
           <input id="email" name="email" type="email" />
         </div>
 
-        <div className={classes.formRow}>
+        <div className={classes.row}>
           <label htmlFor="message">Message</label>
           <textarea id="message" name="message" />
         </div>
 
-        <div className={classes.formRow}>
+        <div className={classes.row}>
           <button type="submit">Submit</button>
         </div>
       </form>
