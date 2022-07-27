@@ -36,6 +36,12 @@ const PortfolioList = [
     services: "Search Engine Optimization",
     websiteURL: "www.chemproservices.com",
   },
+  {
+    name: "Abhang Farms",
+    imageURL: ChemProServices,
+    services: "Custom Website Development",
+    websiteURL: "https://abhangfarms.netlify.app/",
+  },
 ];
 
 export default PortfolioList;

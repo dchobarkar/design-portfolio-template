@@ -31,6 +31,11 @@ const ImportanceOfColorScheme = React.lazy(() => {
   return import("./components/Resources/Posts/ImportanceOfColorScheme/Post");
 });
 
+// Portfolio imports
+const Abhangfarms = React.lazy(() => {
+  return import("./components/Porfolio/Projects/Abhangfarms");
+});
+
 function App(props) {
   return (
     <BrowserRouter>
@@ -43,22 +48,34 @@ function App(props) {
             exact
             render={(props) => <LandingPage {...props} />}
           />
+
           <Route
             path="/portfolio"
             exact
             render={(props) => <Portfolio {...props} />}
           />
+
+          {/* Portfolio routes */}
+          <Route
+            path="/portfolio/abhang-farms"
+            exact
+            render={(props) => <Abhangfarms {...props} />}
+          />
+
           <Route
             path="/services"
             exact
             render={(props) => <Services {...props} />}
           />
+
           <Route
             path="/resources"
             exact
             render={(props) => <Resources {...props} />}
           />
+
           <Route path="/about" exact render={(props) => <About {...props} />} />
+
           {/* Blogpost routes */}
           <Route
             path="/resources/importance-of-color-scheme-in-website"

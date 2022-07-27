@@ -17,7 +17,7 @@ function NavLink({ label, to, onClick }) {
 
   return (
     <li
-      className={match ? clsx(classes.tab, classes.active) : classes.tab}
+      className={clsx(classes.tab, { [classes.active]: match })}
       onClick={onClick}
     >
       <Link to={to}>{label}</Link>

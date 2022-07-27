@@ -16,11 +16,9 @@ function Indicator(props) {
   return (
     <li>
       <span
-        className={
-          props.index === props.activeIndex
-            ? clsx(classes.indicator, classes.activeIndicator)
-            : classes.indicator
-        }
+        className={clsx(classes.indicator, {
+          [classes.activeIndicator]: props.index === props.activeIndex,
+        })}
         onClick={props.onClick}
       />
     </li>
@@ -33,11 +31,9 @@ function Slide(props) {
 
   return (
     <li
-      className={
-        props.index === props.activeIndex
-          ? clsx(classes.slide, classes.activeSlide)
-          : classes.slide
-      }
+      className={clsx(classes.slide, {
+        [classes.activeIndicator]: props.index === props.activeIndex,
+      })}
     >
       <h2 className={classes.comment}>"{props.comment}"</h2>
 
