@@ -1,6 +1,9 @@
 {
-  "name": "portfolio",
+  "name": "design-portfolio-template",
+  "description": "portfolio website template",
   "version": "1.0.0",
+  "author": "Darshan Chobarkar <contact@darshanwebdev.com> (https://darshanwebdev.com)",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@material-ui/styles": "^4.11.4",
